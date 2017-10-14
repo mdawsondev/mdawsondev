@@ -1,7 +1,6 @@
 header
-  height: auto
-  width: 100%
   height: 100%
+  width: 100%
 
 .hero
   +main
@@ -16,6 +15,10 @@ header
     background-size: cover
     height: calc(100% - 2.85rem)
   +lg
+    background: url('../../assets/img/header-lg.jpg') center center no-repeat
+    background-attachment: fixed
+    background-size: cover
+  +xl
     background: url('../../assets/img/header-xl.jpg') center center no-repeat
     background-attachment: fixed
     background-size: cover
@@ -23,10 +26,9 @@ header
   +e('description')
     +main
       animation: 1s ease-out 1.5s 1 fadeIn
-      animation-fill-mode: forwards
+      animation-fill-mode: both
       font-size: .95rem
       line-height: normal
-      visibility: hidden
     +md
       font-size: 1.9rem
 
@@ -39,32 +41,34 @@ header
   +e('social')
     +main
       animation: 1s ease-out 2s 1 slideInFromBottom
-      animation-fill-mode: forwards
-      visibility: hidden
+      animation-fill-mode: both
       color: #fff
       font-size: 1.5rem
-      +md
-        display: block
-        font-size: 3rem
-      li
+    +md
+      display: block
+      font-size: 3rem
+
+    li
+      +main
         background: rgba(0, 0, 0, .8)
         border-radius: .5rem
         display: inline
         margin: 0 .5rem
         padding: 0 .5rem
-        +md
-          margin: 0 2rem
-          padding: 0 1rem
-      ul
-        padding: 0
-        text-align: center
+      +md
+        margin: 0 2rem
+        padding: 0 1rem
+
+    ul
+      padding: 0
+      text-align: center
 
   +e('title')
     +main
       animation: 2s ease-out .5s 1 slideInFromTop
-      line-height: normal
-      font-size: 2rem
       animation-fill-mode: both
+      font-size: 2rem
+      line-height: normal
     +md
       font-size: 4rem
 
