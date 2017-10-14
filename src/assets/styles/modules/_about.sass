@@ -1,0 +1,36 @@
+.about
+  +e('bio')
+    max-width: 100%
+
+  +e('container')
+    +main
+      align-items: center
+      display: block
+      width: 100%
+    +md
+      display: flex
+      justify-content: space-around
+
+  +e('stats')
+    li
+      +main
+        font-size: .8rem
+        list-style: none
+      +sm
+        font-size: 1rem
+
+    ul
+      +main
+        padding: 0
+      +md
+        padding: 2rem
+
+  +e('profile-image')
+    text-align: center
+
+    img
+      +main
+        border-radius:  50%
+      +md
+        height: 14rem
+        width: 14rem

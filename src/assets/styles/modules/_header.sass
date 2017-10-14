@@ -1,0 +1,76 @@
+header
+  height: auto
+  width: 100%
+  height: 100%
+
+.hero
+  +main
+    background: url('../../assets/img/header-sm.jpg') center center no-repeat
+    background-attachment: fixed
+    background-size: cover
+    height: 100%
+    width: 100%
+  +md
+    background: url('../../assets/img/header-md.jpg') center center no-repeat
+    background-attachment: fixed
+    background-size: cover
+    height: calc(100% - 2.85rem)
+  +lg
+    background: url('../../assets/img/header-xl.jpg') center center no-repeat
+    background-attachment: fixed
+    background-size: cover
+      
+  +e('description')
+    +main
+      animation: 1s ease-out 1.5s 1 fadeIn
+      animation-fill-mode: forwards
+      font-size: .95rem
+      line-height: normal
+      visibility: hidden
+    +md
+      font-size: 1.9rem
+
+  +e('inner-wrapper')
+    padding: 1rem
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+
+  +e('social')
+    +main
+      animation: 1s ease-out 2s 1 slideInFromBottom
+      animation-fill-mode: forwards
+      visibility: hidden
+      color: #fff
+      font-size: 1.5rem
+      +md
+        display: block
+        font-size: 3rem
+      li
+        background: rgba(0, 0, 0, .8)
+        border-radius: .5rem
+        display: inline
+        margin: 0 .5rem
+        padding: 0 .5rem
+        +md
+          margin: 0 2rem
+          padding: 0 1rem
+      ul
+        padding: 0
+        text-align: center
+
+  +e('title')
+    +main
+      animation: 2s ease-out .5s 1 slideInFromTop
+      line-height: normal
+      font-size: 2rem
+      animation-fill-mode: both
+    +md
+      font-size: 4rem
+
+  +m('main-display')
+    color: #fff
+    margin: 0
+    text-align: center
+    text-shadow: .25rem .25rem .25rem #000
+    text-transform: uppercase

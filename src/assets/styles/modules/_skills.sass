@@ -1,0 +1,71 @@
+.skills
+  +e('skill-level')
+    list-style: none
+
+  +e('block')
+
+  +e('container')
+    display: flex
+    justify-content: space-between
+    ul
+      +main
+        list-style: none
+        padding: 0
+      +md
+        padding-left: 2rem
+    +md
+      justify-content: flex-start
+  
+  +e('wrapper')
+    flex-wrap: wrap
+    +md
+      display: flex
+      justify-content: space-around
+  
+  h3
+    font-weight: 300
+    text-align: center
+
+.rank-bg
+  background-color: #fff
+  display: inline-block
+  line-height: .5rem
+  width: 5rem
+  +sm
+    width: 10rem
+
+.rank-description
+  color: #555
+  display: none
+  font-size: .8rem
+  margin-left: 1rem
+  +lg
+    display: inline
+
+.rank-fill
+  background-color: #f00
+  display: inline-block
+  line-height: .5rem
+  position: absolute
+  text-align: right
+  width: 5rem
+  +m('1')
+    width: 1rem
+    +sm
+      width: 2rem
+  +m('2')
+    width: 2rem
+    +sm
+      width: 4rem
+  +m('3')
+    width: 3rem
+    +sm
+      width: 6rem
+  +m('4')
+    width: 4rem
+    +sm
+      width: 8rem
+  +m('5')
+    width: 5rem
+    +sm
+      width: 10rem
