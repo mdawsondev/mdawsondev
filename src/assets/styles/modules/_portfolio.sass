@@ -7,34 +7,36 @@
 
   +e('card-background')
     background-color: #222
-    padding: 1rem
     border-radius: .5rem
+    padding: 1rem
 
   h3
-    color: #222
-    font-weight: 700
-    margin-bottom: .5rem
-    margin-top: -1rem
+    +main
+      color: #222
+      font-weight: 700
+      margin-bottom: .5rem
+      margin-top: -1rem
     +sm
       margin-top: 1rem
 
   p
-    display: none
-    margin: 0
-    text-align: left
+    +main
+      display: none
+      margin: 0
+      text-align: left
     +sm
       display: block
 
   +e('container')
+    align-items: baseline
     display: flex
     flex-wrap: wrap
-    align-items: baseline
 
   ul
-    padding: 0
     list-style: none
+    padding: 0
 
   img
-    max-width: 100%
-    height: auto
     border-radius: .3rem
+    height: auto
+    max-width: 100%

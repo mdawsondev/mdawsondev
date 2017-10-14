@@ -1,13 +1,15 @@
 .contact
   +e('container')
     display: flex
-    justify-content: center
     flex-wrap: wrap
+    justify-content: center
     width: 100%
 
   +e('info')
-    max-width: 30rem
-    text-align: justify
+    +main
+      margin: 0 auto
+      max-width: 30rem
+      text-align: justify
     +xl
       padding-right: 3rem
 
@@ -20,9 +22,10 @@
     padding: .5em 2em
 
   & form
-    width: 100%
+    margin: 0 auto
     max-width: 30rem
-    
+    width: 100%
+
   & input
     width: 100%
 
