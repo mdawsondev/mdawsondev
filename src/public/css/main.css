@@ -1,0 +1,149 @@
+.button--primary {
+  background-color: dodgerblue;
+  border-bottom: 3px solid #006ad1;
+  border-left: none;
+  border-right: 3px solid #006ad1;
+  border-top: none;
+  border-radius: .5rem;
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+  padding: .75rem 1.5rem; }
+
+.hero {
+  background: url("/../../public/img/arif-wahid-266541.jpg") center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: -64px 0 0 0; }
+
+.hero__inner-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center; }
+
+.hero__title {
+  font-size: 7rem;
+  margin: 0; }
+  @media (max-width: 576px) {
+    .hero__title {
+      font-size: 2rem; } }
+  @media (max-width: 768px) {
+    .hero__title {
+      font-size: 5rem; } }
+
+.hero__slider {
+  animation-duration: 3s;
+  animation-delay: 2s;
+  bottom: 0;
+  position: absolute; }
+
+.hero__subtitle {
+  animation-duration: 2s;
+  animation-delay: 1s;
+  font-size: 2rem;
+  margin: 0; }
+  @media (max-width: 576px) {
+    .hero__subtitle {
+      font-size: 1.5rem; } }
+
+.hero__inner-wrapper--fancy {
+  color: #fff;
+  cursor: default;
+  text-shadow: .3rem .3rem .3rem #000; }
+
+.navbar__container {
+  align-items: center;
+  background-color: #000;
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  opacity: .8; }
+
+.navbar__item--link {
+  color: #fff;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  transition: .2s all linear; }
+  .navbar__item--link:hover {
+    color: #84c2ff; }
+  @media (max-width: 576px) {
+    .navbar__item--link {
+      padding: .5rem; } }
+
+.navbar__list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  @media (max-width: 576px) {
+    .navbar__list {
+      justify-content: center; } }
+
+.navbar__menu {
+  width: 50rem; }
+
+.navbar__item--active {
+  color: dodgerblue;
+  border: 1px solid dodgerblue; }
+  .navbar__item--active:hover {
+    border: 1px solid #84c2ff; }
+
+.navbar__fa-icon {
+  color: white; }
+  @media (max-width: 576px) {
+    .navbar__fa-icon {
+      display: none; } }
+
+.portal {
+  width: 70rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto; }
+
+.portal__card {
+  margin: 5rem 0 0;
+  padding: 2rem;
+  text-align: center;
+  width: 18rem; }
+
+.portal__card--justify {
+  text-align: justify; }
+
+.section {
+  box-sizing: border-box;
+  padding: 5rem 1rem;
+  width: 100%; }
+
+.section--dark {
+  background-color: #111; }
+
+.section--light {
+  background-color: #eee; }
+
+.section__header {
+  font-size: 2.5rem;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase; }
+
+.section__header--dark {
+  color: #222; }
+
+.section__header--light {
+  color: #eee; }
+
+.section__break {
+  background-color: dodgerblue;
+  height: 3px;
+  margin: 0 auto;
+  width: 10rem; }
+
+.section__header--fancy {
+  color: #0077ea; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif; }

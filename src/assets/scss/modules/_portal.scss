@@ -1,0 +1,18 @@
+.portal {
+  width: 70rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.portal__card {
+  // background-color: #ddd;
+  margin: 5rem 0 0;
+  padding: 2rem;
+  text-align: center;
+  width: 18rem;
+}
+
+.portal__card--justify {
+  text-align: justify;
+}

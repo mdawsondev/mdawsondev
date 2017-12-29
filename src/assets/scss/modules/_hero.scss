@@ -1,0 +1,49 @@
+.hero {
+  background: url("~/../../public/img/arif-wahid-266541.jpg") center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: -64px 0 0 0
+}
+
+.hero__inner-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.hero__title {
+  font-size: 7rem;
+  margin: 0;
+  @include sm {
+    font-size: 2rem;
+  }
+  @include md {
+    font-size: 5rem;
+  }
+}
+
+.hero__slider {
+  animation-duration: 3s;
+  animation-delay: 2s;
+  bottom: 0;
+  position: absolute;
+}
+
+.hero__subtitle {
+  animation-duration: 2s;
+  animation-delay: 1s;
+  font-size: 2rem;
+  margin: 0;
+  @include sm {
+    font-size: 1.5rem;
+  }
+}
+
+.hero__inner-wrapper--fancy {
+  color: #fff;
+  cursor: default;
+  text-shadow: .3rem .3rem .3rem #000;
+}
