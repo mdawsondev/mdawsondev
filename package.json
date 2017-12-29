@@ -2,7 +2,7 @@
   "name": "mdawsondev",
   "version": "2.0.0",
   "description": "Personal portfolio of Matt Dawson.",
-  "main": "index.js",
+  "main": "./src/index.html",
   "repository": "https://github.com/mdawsondev/mdawsondev",
   "author": "Matt Dawson <mdawsondev@gmail.com>",
   "license": "MIT",
@@ -10,8 +10,6 @@
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
-    "ejs": "^2.5.7",
-    "express": "^4.16.2",
     "webpack": "^3.10.0"
   }
 }
