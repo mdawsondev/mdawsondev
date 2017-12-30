@@ -1,13 +1,15 @@
 .hero {
-  background: url("~/../../public/img/arif-wahid-266541.jpg") center center no-repeat;
+  @include sm {
+    background: url("/../../public/img/bg-mobile.jpg") center center no-repeat;
+  }
+  background: url("/../../public/img/bg.jpg") center center no-repeat;
   background-attachment: fixed;
   background-size: cover;
   font-family: 'Muli', sans-serif;
   height: 100vh;
-
 }
 
-.hero__inner-wrapper {
+.hero__inner {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -15,36 +17,36 @@
   justify-content: center;
 }
 
-.hero__title {
-  font-size: 7rem;
+.hero__inner--fancy {
+  color: $white;
+  cursor: default;
+  text-shadow: .2rem .2rem 3rem $black;
+}
+
+.hero__slider {
+  animation-delay: 2s;
+  animation-duration: 4s;
+  bottom: 0;
+  position: absolute;
+}
+
+.hero__subtitle {
+  @include sm {
+    font-size: 1.5rem;
+  }
+  animation-delay: 1s;
+  animation-duration: 2s;
+  font-size: 2.5rem;
   margin: 0;
+}
+
+.hero__title {
   @include md {
     font-size: 5rem;
   }
   @include sm {
     font-size: 3rem;
   }
-}
-
-.hero__slider {
-  animation-duration: 4s;
-  animation-delay: 2s;
-  bottom: 0;
-  position: absolute;
-}
-
-.hero__subtitle {
-  animation-duration: 2s;
-  animation-delay: 1s;
-  font-size: 2.5rem;
+  font-size: 7rem;
   margin: 0;
-  @include sm {
-    font-size: 1.5rem;
-  }
-}
-
-.hero__inner-wrapper--fancy {
-  color: #fff;
-  cursor: default;
-  text-shadow: .2rem .2rem 3rem #000;
 }

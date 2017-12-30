@@ -70,5 +70,16 @@
 "use strict";
 
 
+function init() {
+  var links = document.querySelectorAll(".nav-main__item");
+  links.forEach(function (e) {
+    e.addEventListener("click", function (el) {
+      el.currentTarget.classList.toggle("nav-main__item--active");
+    });
+  });
+}
+
+init();
+
 /***/ })
 /******/ ]);

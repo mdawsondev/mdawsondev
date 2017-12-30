@@ -1,1 +1,2 @@
 - Hamburger top menu.
+- Responsive background for people trying to break the site.
