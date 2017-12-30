@@ -1,0 +1,16 @@
+.wrapper {
+  box-sizing: border-box;
+  margin: 0 10rem;
+  @include xl {
+    margin: 0 5rem;
+  }
+  @include lg {
+    margin: 0 2rem;
+  }
+  @include md {
+    margin: 0 1rem;
+  }
+  @include sm {
+    margin: 0 .2rem;
+  }
+}

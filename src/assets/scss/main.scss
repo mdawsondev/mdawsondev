@@ -1,11 +1,17 @@
 @import './settings';
 @import './modules/button';
-@import './modules/container';
+@import './modules/footer-main';
 @import './modules/hero';
-@import './modules/navbar';
+@import './modules/nav-main';
 @import './modules/portal';
+@import './modules/portfolio';
 @import './modules/section';
+@import './modules/wrapper';
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  line-height: 1.5rem;
 }

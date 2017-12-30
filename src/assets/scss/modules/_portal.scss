@@ -1,18 +1,33 @@
 .portal {
-  width: 70rem;
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
+  @include sm {
+    flex-direction: column;
+  }
 }
 
 .portal__card {
-  // background-color: #ddd;
+  border: 1px solid white;
+  border-radius: 2rem;
   margin: 5rem 0 0;
   padding: 2rem;
   text-align: center;
   width: 18rem;
+  @include md {
+    width: fit-content;
+    margin: 1rem 0 0;
+  }
+  @include sm {
+    width: fit-content;
+    margin: 1rem 0 0;
+  }
 }
 
 .portal__card--justify {
   text-align: justify;
+}
+
+.portal-fa {
+  font-size: 3rem;
 }

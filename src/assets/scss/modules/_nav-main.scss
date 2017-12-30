@@ -1,0 +1,60 @@
+.nav-main {
+  background-color: rgba(0, 0, 0, 0.75);
+  box-sizing: border-box;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.nav-main__container {
+  display: flex;
+  justify-content: space-between;
+  @include sm {
+    justify-content: center;
+  }
+}
+
+.nav-main__item {
+  color: #fff;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  transition: .2s linear;
+  &:hover {
+    color: lighten(dodgerblue, 25%);
+  }
+  @include sm {
+    padding: 0 .5rem;
+  }
+}
+
+.nav-main__item--active {
+  color: dodgerblue;
+  border: 1px solid dodgerblue;
+  &:hover {
+    border: 1px solid lighten(dodgerblue, 25%);
+  }
+}
+
+.nav-main__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-main__navbar {
+  align-self: center;
+  height: fit-content;
+}
+
+.fa-github {
+  align-self: center;
+  color: #fff;
+}
+
+.fa-github-link {
+  @include sm {
+    display: none
+  }
+}
