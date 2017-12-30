@@ -1,0 +1,12 @@
+.about__break {
+  height: 100px;
+  background-color: dodgerblue;
+  width: 3px;
+  opacity: .3;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+  margin-top: 2rem;
+}
