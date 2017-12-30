@@ -6,37 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Matt Dawson - Web Development</title>
-  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="icon" href="./public/img/favicon.png" type="image/png">
   <link rel="stylesheet" href="./public/css/vendor/animate.css">
   <link rel="stylesheet" href="./public/css/vendor/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Muli:200" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200">
   <link rel="stylesheet" href="./public/css/main.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 </head>
 
 <body>
+
   <header class="nav-main">
     <div class="wrapper">
       <div class="nav-main__container">
-        <a class="fa-github-link" href="#">
+        <a class="nav-main__icon" href="#">
           <i class="nav-main__item fab fa-github fa-2x"></i>
         </a>
         <nav class="nav-main__navbar">
           <ul class="nav-main__list">
             <li>
-              <a class="nav-main__item nav-main__item--active" href="#">Home</a>
+              <a class="nav-main__item nav-main__item--active" href="#home">Home</a>
             </li>
             <li>
-              <a class="nav-main__item" href="#">Portfolio</a>
+              <a class="nav-main__item" href="#portfolio">Portfolio</a>
             </li>
             <li>
-              <a class="nav-main__item" href="#">Skills</a>
+              <a class="nav-main__item" href="#skills">Skills</a>
             </li>
             <li>
-              <a class="nav-main__item" href="#">About</a>
+              <a class="nav-main__item" href="#about">About</a>
             </li>
             <li>
-              <a class="nav-main__item" href="#">Contact</a>
+              <a class="nav-main__item" href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
@@ -52,7 +53,7 @@
     </div>
   </div>
 
-  <section class="section section--light">
+  <section class="section section--light" id="home">
     <div class="section__container">
       <h2 class="section__header section__header--dark">
         <span class="section__header--fancy">W</span>elcome</h2>
@@ -79,7 +80,7 @@
     </div>
   </section>
 
-  <section class="section section--dark">
+  <section class="section section--dark" id="portfolio">
     <div class="wrapper">
       <h2 class="section__header section__header--light">
         <span class="section__header--fancy">P</span>ortfolio</h2>
@@ -127,7 +128,7 @@
     </div>
   </section>
 
-  <section class="section section--light">
+  <section class="section section--light" id="skills">
     <div class="wrapper">
       <h2 class="section__header section__header--dark">
         <span class="section__header--fancy">S</span>kills</h2>
@@ -137,7 +138,7 @@
     </div>
   </section>
 
-  <section class="section section--dark">
+  <section class="section section--dark" id="about">
     <div class="wrapper">
       <h2 class="section__header section__header--light">
         <span class="section__header--fancy">A</span>bout</h2>
@@ -155,13 +156,14 @@
     </div>
   </section>
 
-  <section class="section section--light">
+  <section class="section section--light" id="contact">
     <div class="wrapper">
       <h2 class="section__header section__header--dark">
         <span class="section__header--fancy">C</span>ontact</h2>
       <div class="section__break"></div>
+    </div>
   </section>
-  </div>
+
   <footer class="footer-main">
     <div class="wrapper">
       <div class="footer-main__container">

@@ -1,5 +1,5 @@
 .nav-main {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: $black-clear;
   box-sizing: border-box;
   padding: 1rem;
   position: absolute;
@@ -8,31 +8,33 @@
 }
 
 .nav-main__container {
-  display: flex;
-  justify-content: space-between;
   @include sm {
     justify-content: center;
   }
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-main__item {
-  color: #fff;
+  @include sm {
+    padding: 0 .5rem;
+  }
+  color: $white;
   padding: .5rem 1rem;
   text-decoration: none;
   transition: .2s linear;
+
   &:hover {
-    color: lighten(dodgerblue, 25%);
-  }
-  @include sm {
-    padding: 0 .5rem;
+    color: lighten($primary, 25%);
   }
 }
 
 .nav-main__item--active {
-  color: dodgerblue;
-  border: 1px solid dodgerblue;
+  border: 1px solid $primary;
+  color: $primary;
+
   &:hover {
-    border: 1px solid lighten(dodgerblue, 25%);
+    border: 1px solid lighten($primary, 25%);
   }
 }
 
@@ -48,13 +50,10 @@
   height: fit-content;
 }
 
-.fa-github {
-  align-self: center;
-  color: #fff;
-}
-
-.fa-github-link {
+.nav-main__icon {
   @include sm {
-    display: none
+    display: none;
   }
+  align-self: center;
+  color: $white;
 }

@@ -115,15 +115,15 @@
   padding: .5rem 1rem;
   text-decoration: none;
   transition: .2s linear; }
-  .nav-main__item:hover {
-    color: #9ecfff; }
   @media (max-width: 576px) {
     .nav-main__item {
       padding: 0 .5rem; } }
+  .nav-main__item:hover {
+    color: #9ecfff; }
 
 .nav-main__item--active {
-  color: dodgerblue;
-  border: 1px solid dodgerblue; }
+  border: 1px solid #1e90ff;
+  color: #1e90ff; }
   .nav-main__item--active:hover {
     border: 1px solid #9ecfff; }
 
@@ -137,13 +137,12 @@
   align-self: center;
   height: fit-content; }
 
-.fa-github {
+.nav-main__icon {
   align-self: center;
   color: #fff; }
-
-@media (max-width: 576px) {
-  .fa-github-link {
-    display: none; } }
+  @media (max-width: 576px) {
+    .nav-main__icon {
+      display: none; } }
 
 .portal {
   display: flex;
