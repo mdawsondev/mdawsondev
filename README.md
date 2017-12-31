@@ -17,6 +17,7 @@ My name's Matt, and I'm a web devloper! I'm very interested in the development o
 
 Self-taught, and highly motivated to expose myself to as much education and experience that I can possibly get my hands on. I've completed the following (as well as seveal unlisted) courses/certifications, and fully intend to keep the list growing. :)
 
+* [The Web Developer Bootcamp](https://ude.my/UC-PWXY7W94/)
 * [ES6 Javascript](http://ude.my/UC-7VCRMSH3)
 * [Mastering the Modern Workflow](http://ude.my/UC-LY9DH0YE)
 * [Pre-Programming](http://ude.my/UC-TVZ3INHQ)

@@ -5,10 +5,19 @@
 @import './modules/footer-main';
 @import './modules/hero';
 @import './modules/nav-main';
-@import './modules/portal';
 @import './modules/portfolio';
 @import './modules/section';
+@import './modules/welcome';
 @import './modules/wrapper';
+
+a {
+  color: $white;
+  text-decoration: none;
+  transition: .25s all linear;
+  &:hover {
+    color: lighten($primary, 25%);
+  }
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;

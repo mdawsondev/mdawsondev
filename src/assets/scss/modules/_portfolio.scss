@@ -4,23 +4,44 @@
   margin-top: 2rem;
 }
 
+.portfolio__icon {
+  @include sm {
+    font-size: 4rem;
+  }
+  font-size: 6rem;
+}
+
+.portfolio__title {
+  @include sm {
+    font-size: 1rem;
+  }
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 .portfolio__btn-container {
   text-align: center;
-  color: #fff;
 }
 
 .portfolio__grid {
+  @include sm {
+    grid-column-gap: .25rem;
+    grid-row-gap: 0;
+    grid-template-columns: repeat(auto-fit, 150px);
+    margin: .5rem 0;
+  }
   display: grid;
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
   grid-template-columns: repeat(auto-fit, 300px);
-  justify-content: center;  
+  justify-content: center;
   margin: 2.5rem 0;
 }
 
 .portfolio__img {
   max-width: 100%;
-  transition: .3s all linear;
+  transition: all .3s linear;
+
   &:hover {
     transform: scale(1.1, 1.1)
   }

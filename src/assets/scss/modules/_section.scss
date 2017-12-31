@@ -1,15 +1,26 @@
 .section {
+  @include md {
+    padding: 2rem 1rem;
+  }
   box-sizing: border-box;
   padding: 5rem 1rem;
   width: 100%;
 }
 
 .section--dark {
-  background-color: #111;
+  background-color: $dark;
 }
 
 .section--light {
-  background-color: #eee;
+  background-color: $light;
+}
+
+.section__break {
+  background-color: $primary;
+  border: 0;
+  height: 3px;
+  margin: 0 auto;
+  width: 10rem;
 }
 
 .section__header {
@@ -20,21 +31,13 @@
 }
 
 .section__header--dark {
-  color: #222;
-}
-
-.section__header--light {
-  color: #eee;
-}
-
-.section__break {
-  background-color: dodgerblue;
-  height: 3px;
-  margin: 0 auto;
-  width: 10rem;
+  color: $dark;
 }
 
 .section__header--fancy {
-  color: darken(dodgerblue, 10%);
+  color: darken($primary, 10%);
 }
 
+.section__header--light {
+  color: $white;
+}
