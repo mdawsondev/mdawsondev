@@ -173,77 +173,48 @@
     .particles {
       background: url("/src/public/img/bg-mobile.jpg") center center no-repeat; } }
 
-.portfolio__buttons {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 2rem; }
+.portfolio__footer-subtitle {
+  margin-top: -1.5rem; }
+
+.portfolio__footer-title {
+  font-size: 1.5rem; }
+
+.portfolio__footer-list > li {
+  margin: .5rem; }
+
+.portfolio__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center; }
+  @media (max-width: 576px) {
+    .portfolio__grid {
+      grid-template-columns: repeat(auto-fit, 150px); } }
 
 .portfolio__help {
   border: 1px dashed #eee;
   border-radius: 1rem;
-  color: #fff;
-  cursor: default;
   font-size: .6rem;
-  font-weight: 700;
   line-height: 1.2rem;
   margin: -.5rem 0 0 6rem;
   padding: 0 .4rem;
   position: absolute;
   text-transform: uppercase; }
-  @media (max-width: 768px) {
-    .portfolio__help {
-      display: none; } }
 
-.portfolio__extra {
-  color: #fff; }
+@media (max-width: 576px) {
+  .portfolio__icon {
+    font-size: 4rem; } }
 
-.portfolio__extra-title {
-  color: #777;
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-align: center; }
-
-.portfolio__extra-subtitle {
-  color: #777;
-  font-size: 1.1rem;
-  margin-top: -1.5rem;
-  text-align: center; }
-
-.portfolio__extra-list {
-  margin: 2rem; }
-
-.portfolio__icon {
-  font-size: 6rem; }
+.portfolio__icon-name {
+  font-size: 1.5rem; }
   @media (max-width: 576px) {
-    .portfolio__icon {
-      font-size: 4rem; } }
-
-.portfolio__title {
-  font-size: 1.5rem;
-  font-weight: 700; }
-  @media (max-width: 576px) {
-    .portfolio__title {
+    .portfolio__icon-name {
       font-size: 1rem; } }
 
-.portfolio__btn-container {
-  text-align: center; }
-
-.portfolio__grid {
-  display: grid;
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, 300px);
-  justify-content: center;
-  margin: 2.5rem 0; }
-  @media (max-width: 576px) {
-    .portfolio__grid {
-      grid-column-gap: .25rem;
-      grid-row-gap: 0;
-      grid-template-columns: repeat(auto-fit, 150px);
-      margin: .5rem 0; } }
+.portfolio__icons {
+  display: flex;
+  justify-content: space-around; }
 
 .portfolio__img {
-  max-width: 100%;
   transition: all .3s linear; }
   .portfolio__img:hover {
     transform: scale(1.1, 1.1); }
@@ -259,7 +230,7 @@
   background-color: #1e90ff;
   border: 0;
   height: 3px;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   width: 10rem; }
 
 .section__header {
@@ -422,3 +393,6 @@ p {
 ul {
   list-style: none;
   padding: 0; }
+
+img {
+  max-width: 100%; }
