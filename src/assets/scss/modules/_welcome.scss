@@ -3,20 +3,12 @@
     margin: 1rem 0 0;
     width: fit-content;
   }
-  background-color: $white;
   border-bottom: 2px solid lighten($primary, 35%);
-  border-radius: 2rem;
+  border-radius: 1.25rem;
   border-right: 2px solid lighten($primary, 35%);
   margin: 1rem .5rem 0;
   padding: 2rem;
-  text-align: center;
   width: 18rem;
-}
-
-.welcome__card--unimportant {
-  @include lg {
-    display: none;
-  }
 }
 
 .welcome__container {
@@ -25,43 +17,11 @@
   }
   display: flex;
   justify-content: space-around;
-  margin: 0 auto;
-}
-
-.welcome__intro {
-  text-align: center;
-}
-
-.welcome__intro--major {
-  color: $neutral;
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-top: 2rem;
-}
-
-.welcome__icon {
-  color: rgba($primary, .5);
-  font-size: 3rem;
-}
-
-.welcome__link {
-  color: darken($primary, 20%);
-  font-weight: 600;
 }
 
 .welcome__list {
-  list-style: none;
-  padding: 0;
   text-align: initial;
   & > li {
     margin: .5rem;
   }
-}
-
-.welcome__message {
-  text-align: justify;
-}
-
-.welcome__suggested {
-  color: $neutral - $dark;
 }

@@ -6,6 +6,10 @@
   background-color: $light;
 }
 
+.gen--bg-white {
+  background-color: $white;
+}
+
 .gen--cursor-def {
   cursor: default;
 }
@@ -20,13 +24,23 @@
   }
 }
 
-.gen--link {
-  text-decoration: none;
-  transition: .25s all linear;
+.gen--hide-md {
+  @include md {
+    display: none;
+  }
 }
 
-.gen--link-light {
+.gen--hide-lg {
+  @include lg {
+    display: none;
+  }
+}
+
+.gen--link {
   color: $white;
+  text-decoration: none;
+  transition: .25s all linear;
+
   &:hover {
     color: lighten($primary, 25%);
   }
@@ -34,16 +48,4 @@
 
 .gen--middle {
   align-self: center;
-}
-
-.gen--text-dark {
-  color: $dark;
-}
-
-.gen--text-neutral {
-  color: $neutral;
-}
-
-.gen--text-white {
-  color: $white;
 }

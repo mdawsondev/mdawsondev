@@ -67,6 +67,9 @@
 .gen--bg-light {
   background-color: #eee; }
 
+.gen--bg-white {
+  background-color: #fff; }
+
 .gen--cursor-def {
   cursor: default; }
 
@@ -77,26 +80,23 @@
   .gen--hide-sm {
     display: none; } }
 
+@media (max-width: 768px) {
+  .gen--hide-md {
+    display: none; } }
+
+@media (max-width: 992px) {
+  .gen--hide-lg {
+    display: none; } }
+
 .gen--link {
+  color: #fff;
   text-decoration: none;
   transition: .25s all linear; }
-
-.gen--link-light {
-  color: #fff; }
-  .gen--link-light:hover {
+  .gen--link:hover {
     color: #9ecfff; }
 
 .gen--middle {
   align-self: center; }
-
-.gen--text-dark {
-  color: #111; }
-
-.gen--text-neutral {
-  color: #777; }
-
-.gen--text-white {
-  color: #fff; }
 
 .hero {
   font-family: 'Muli', sans-serif;
@@ -342,6 +342,30 @@
 .skills__title--fancy {
   color: #84c2ff; }
 
+.text-center {
+  text-align: center; }
+
+.text-dark {
+  color: #111; }
+
+.text-neutral {
+  color: #777; }
+
+.text-white {
+  color: #fff; }
+
+.text-justify {
+  text-align: justify; }
+
+.text-primary-lighter {
+  color: #84c2ff; }
+
+.text-primary-darker {
+  color: #005db7; }
+
+.text-neutral-darker {
+  color: #444444; }
+
 .vertical-break {
   align-self: center;
   background-color: #1e90ff;
@@ -350,60 +374,28 @@
   width: 3px; }
 
 .welcome__card {
-  background-color: #fff;
   border-bottom: 2px solid #d1e8ff;
-  border-radius: 2rem;
+  border-radius: 1.25rem;
   border-right: 2px solid #d1e8ff;
   margin: 1rem .5rem 0;
   padding: 2rem;
-  text-align: center;
   width: 18rem; }
   @media (max-width: 768px) {
     .welcome__card {
       margin: 1rem 0 0;
       width: fit-content; } }
 
-@media (max-width: 992px) {
-  .welcome__card--unimportant {
-    display: none; } }
-
 .welcome__container {
   display: flex;
-  justify-content: space-around;
-  margin: 0 auto; }
+  justify-content: space-around; }
   @media (max-width: 768px) {
     .welcome__container {
       flex-direction: column; } }
 
-.welcome__intro {
-  text-align: center; }
-
-.welcome__intro--major {
-  color: #777;
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-top: 2rem; }
-
-.welcome__icon {
-  color: rgba(30, 144, 255, 0.5);
-  font-size: 3rem; }
-
-.welcome__link {
-  color: #005db7;
-  font-weight: 600; }
-
 .welcome__list {
-  list-style: none;
-  padding: 0;
   text-align: initial; }
   .welcome__list > li {
     margin: .5rem; }
-
-.welcome__message {
-  text-align: justify; }
-
-.welcome__suggested {
-  color: #666666; }
 
 .wrapper {
   box-sizing: border-box;
