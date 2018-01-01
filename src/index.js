@@ -1,3 +1,5 @@
+particlesJS.load('particles-js', './assets/json/particles.json');
+
 function init() {
   const links = document.querySelectorAll(".nav-main__item");
   links.forEach( (e) => {

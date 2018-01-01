@@ -4,6 +4,45 @@
   margin-top: 2rem;
 }
 
+.portfolio__help {
+  @include md {
+    display: none;
+  }
+  border: 1px dashed $light;
+  border-radius: 1rem;
+  color: $white;
+  cursor: default;
+  font-size: .6rem;
+  font-weight: 700;
+  line-height: 1.2rem;
+  margin: -.5rem 0 0 6rem;
+  padding: 0 .4rem;
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.portfolio__extra {
+  color: $white;
+}
+
+.portfolio__extra-title {
+  color: $neutral;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.portfolio__extra-subtitle {
+  color: $neutral;
+  font-size: 1.1rem;
+  margin-top: -1.5rem;
+  text-align: center;
+}
+
+.portfolio__extra-list {
+  margin: 2rem;
+}
+
 .portfolio__icon {
   @include sm {
     font-size: 4rem;

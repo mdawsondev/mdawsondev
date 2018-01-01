@@ -1,0 +1,13 @@
+.particles {
+  @include sm {
+    background: url("/src/public/img/bg-mobile.jpg") center center no-repeat;
+  }
+  background: url("/src/public/img/bg.jpg") center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  position: fixed;
+  z-index: -1;
+}

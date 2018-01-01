@@ -70,6 +70,8 @@
 "use strict";
 
 
+particlesJS.load('particles-js', './assets/json/particles.json');
+
 function init() {
   var links = document.querySelectorAll(".nav-main__item");
   links.forEach(function (e) {

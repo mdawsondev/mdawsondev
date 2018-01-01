@@ -5,8 +5,11 @@
 @import './modules/footer-main';
 @import './modules/hero';
 @import './modules/nav-main';
+@import './modules/particles';
 @import './modules/portfolio';
 @import './modules/section';
+@import './modules/skills';
+@import './modules/vertical-break';
 @import './modules/welcome';
 @import './modules/wrapper';
 
@@ -25,4 +28,9 @@ body {
 
 p {
   line-height: 1.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }

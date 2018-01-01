@@ -12,10 +12,13 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200">
   <link rel="stylesheet" href="./public/css/main.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script defer src="./bundle.js"></script>
 </head>
 
 <body>
+
+  <div class="particles" id="particles-js"></div>
 
   <header class="nav-main">
     <div class="wrapper">
@@ -45,6 +48,7 @@
       </div>
     </div>
   </header>
+
 
   <div class="hero">
     <div class="hero__inner hero__inner--fancy">
@@ -84,8 +88,8 @@
         <div class="welcome__card">
           <i class="welcome__icon fas fa-briefcase"></i>
           <h2>To Employers</h2>
-          <p class="welcome__message">First, thank you for your time! You're looking to view my existing work and credentials. I'm always available a
-            quick chat or phonecall if you have any questions.</p>
+          <p class="welcome__message">First, thank you for your time! You're looking to view my existing work and credentials. I'm always available for
+            a quick chat or a call if you have any questions.</p>
           <h4 class="welcome__suggested">Suggested Links</h4>
           <ul class="welcome__list">
             <li>
@@ -127,19 +131,22 @@
 
       <div class="portfolio__buttons">
         <div class="portfolio__btn-container">
-          <a href="#">
+          <p class="portfolio__help">Why?</p>
+          <a href="https://github.com/mdawsondev" target="_blank">
             <i class="portfolio__icon fab fa-github"></i>
             <p class="portfolio__title">GitHub</p>
           </a>
         </div>
         <div class="portfolio__btn-container">
-          <a href="#">
+          <p class="portfolio__help">Why?</p>
+          <a href="https://codepen.io/mdawsondev" target="_blank">
             <i class="portfolio__icon fab fa-codepen"></i>
             <p class="portfolio__title">CodePen</p>
           </a>
         </div>
         <div class="portfolio__btn-container">
-          <a href="#">
+          <p class="portfolio__help">Why?</p>
+          <a href="https://www.npmjs.com/~mdawsondev" target="_blank">
             <i class="portfolio__icon fab fa-npm"></i>
             <p class="portfolio__title">npm</p>
           </a>
@@ -189,6 +196,22 @@
         </div>
       </div>
 
+      <div class="portfolio__extra">
+        <p class="portfolio__extra-title">What else are you working on?</p>
+        <p class="portfolio__extra-subtitle">Check it out!</p>
+        <ul class="portfolio__extra-list">
+          <li>
+            <p>
+              <a href="#">Lessons</a>: Upcoming YouTube series and accompanying website to help teach beginners.</p>
+          </li>
+          <li>
+            <p>
+              <a href="https://github.com/mdawsondev/munchkin">Munchkin</a>: Designed to be an small, ultra user-friendly HTML/CSS framework.</p>
+          </li>
+          <li>
+        </ul>
+      </div>
+
     </div>
   </section>
 
@@ -197,8 +220,139 @@
       <h2 class="section__header section__header--dark">
         <span class="section__header--fancy">S</span>kills</h2>
       <hr class="section__break">
-      <div class="skills__icons">
+
+      <div class="skills__leader">
+        <div class="skills__summary">
+          <h3 class="skills__title">
+            <i class="skills__title--fancy fas fa-newspaper"></i> Summary</h3>
+          <p>Experienced with front-end, dabbled with back-end! Knowledgable about workflow, and adaptable to new situations.
+            Eager to learn new languages and skills.</p>
+          <p>I'm comfortable with version control, modularization, and implementing best practices and new theories.</p>
+          <p>Constant practice and interest in aquiring new skills motivates me to work hard and learn as much as I can!</p>
+        </div>
+
+        <div class="vertical-break">
+        </div>
+
+        <div class="skills__certifications">
+          <h3 class="skills__title">
+            <i class="skills__title--fancy fas fa-certificate"></i> Certifications</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Course</th>
+                <th>Hours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="skills__certification-title">
+                  <a href="https://ude.my/UC-PWXY7W94">The Web Developer Bootcamp</a>
+                </td>
+                <td class="skills__certification-hours">43</td>
+              </tr>
+              <tr>
+                <td class="skills__certification-title">
+                  <a href="http://ude.my/UC-7VCRMSH3">ES6 Javascript</a>
+                </td>
+                <td class="skills__certification-hours">6.5</td>
+              </tr>
+              <tr>
+                <td class="skills__certification-title">
+                  <a href="http://ude.my/UC-LY9DH0YE">Mastering the Modern Workflow</a>
+                </td>
+                <td class="skills__certification-hours">15</td>
+              </tr>
+              <tr>
+                <td class="skills__certification-title">
+                  <a href="http://ude.my/UC-TVZ3INHQ">Pre-Programming</a>
+                </td>
+                <td class="skills__certification-hours">6.5</td>
+              </tr>
+              <tr>
+                <td class="skills__certification-title">
+                  <a href="https://www.freecodecamp.org/mdawsondev/front-end-certification">FCC Front-End Development</a>
+                </td>
+                <td class="skills__certification-hours">477</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Total Certified Hours: 548</p>
+        </div>
+
       </div>
+
+      <div class="skills__icons">
+        <i class="skills__icons--center fab fa-html5"></i>
+        <i class="skills__icons--center fab fa-css3"></i>
+        <i class="skills__icons--center fab fa-js"></i>
+        <i class="skills__icons--center fab fa-sass"></i>
+        <i class="skills__icons--center fab fa-gulp"></i>
+        <i class="skills__icons--center fab fa-git"></i>
+        <i class="skills__icons--center fab fa-github"></i>
+        <i class="skills__icons--center fab fa-node"></i>
+        <i class="skills__icons--center fab fa-npm"></i>
+        <i class="skills__icons--center fab fa-wordpress-simple"></i>
+        <i class="skills__icons--center fab fa-google-drive"></i>
+        <i class="skills__icons--center fab fa-slack"></i>
+      </div>
+
+      <div class="skills__container">
+        <div class="1">
+          <h4>Front-end</h4>
+          <ul class="skills__list">
+            <li>HTML(5)</li>
+            <li>CSS(3)</li>
+            <li>Sass</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+            <li>ES2015 (ES6)</li>
+            <li>Webpack</li>
+          </ul>
+        </div>
+        <div class="2">
+          <h4>Back-end</h4>
+          <ul class="skills__list">
+            <li>NodeJS</li>
+            <li>Espress</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+        <div class="3">
+          <h4>CMS/Frameworks</h4>
+          <ul class="skills__list">
+            <li>Wordpress</li>
+            <li>Bootstrap 4</li>
+            <li>SemanticUI</li>
+          </ul>
+        </div>
+        <div class="4">
+          <h4>Deployment</h4>
+          <ul class="skills__list">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Gulp</li>
+            <li>npm</li>
+            <li>Cloud9</li>
+            <li>MLab</li>
+            <li>Heroku</li>
+          </ul>
+        </div>
+        <div class="4">
+          <h4>Other</h4>
+          <ul class="skills__list">
+            <li>Batch</li>
+            <li>C#</li>
+            <li>AutoIt</li>
+            <li>Photoshop</li>
+            <li>Tampermonkey</li>
+            <li>Visual Studio Code</li>
+            <li>Yarn</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -208,13 +362,33 @@
         <span class="section__header--fancy">A</span>bout</h2>
       <hr class="section__break">
       <div class="about__container">
+
         <div class="about__me">
-          <h2>About Me</h2>
+          <h2 class="about__title">
+            <span class="skills__title--fancy">
+              <i class="fas fa-user"></i>
+            </span> About Me</h2>
+          <img class="about__image" src="./public/img/matt.jpg">
+          <p class="about__bio">Prior to web development, I worked as an artist, writer, and amateur programmer. After freelancing for a while,
+            I decided I wanted more stability in my work.</p>
+          <p class="about__bio">I've built websites as a hobby since I was young, and the more I looked into career opportunities, the more I fell
+            in love with development. After working on a couple of larger projects, I knew web development was the career
+            I wanted.</p>
+
         </div>
-        <div class="about__break">
+
+        <div class="vertical-break">
         </div>
+
         <div class="about__site">
-          <h2>About This Site</h2>
+          <h2 class="about__title">
+            <span class="skills__title--fancy">
+              <i class="fas fa-code"></i>
+            </span> About This Site</h2>
+
+            <p class="about__bio">Languages: HTML, Sass, ES6</p>
+            <p class="about__bio">Libraries: Animate, Normalize, Font Awesome, Particles</p>
+            <p class="about__bio">Tech: VSCode, git, GitHub, webpack</p>
 
           <!-- <ul>
             <li>responsive design</li>

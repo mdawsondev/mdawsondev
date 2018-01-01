@@ -1,12 +1,24 @@
-.about__break {
-  background-color: $primary;
-  height: 100px;
-  opacity: .3;
-  width: 3px;
-}
-
 .about__container {
   display: grid;
   grid-template-columns: 1fr 3px 1fr;
   margin-top: 2rem;
+}
+
+.about__image {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 10rem;
+}
+
+.about__bio {
+  color: $white;
+  text-align: justify;
+  padding: 0 2rem;
+}
+
+.about__title {
+  color: lighten($neutral, 30%);
+  text-align: center;
 }
