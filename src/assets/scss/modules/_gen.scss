@@ -1,3 +1,11 @@
+.gen--bg-dark {
+  background-color: $dark;
+}
+
+.gen--bg-light {
+  background-color: $light;
+}
+
 .gen--cursor-def {
   cursor: default;
 }
@@ -26,6 +34,14 @@
 
 .gen--middle {
   align-self: center;
+}
+
+.gen--text-dark {
+  color: $dark;
+}
+
+.gen--text-neutral {
+  color: $neutral;
 }
 
 .gen--text-white {

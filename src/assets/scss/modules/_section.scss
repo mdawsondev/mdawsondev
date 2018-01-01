@@ -4,18 +4,9 @@
   }
   box-sizing: border-box;
   padding: 5rem 1rem;
-  width: 100%;
 }
 
-.section--dark {
-  background-color: $dark;
-}
-
-.section--light {
-  background-color: $light;
-}
-
-.section__break {
+.section__rule {
   background-color: $primary;
   border: 0;
   height: 3px;
@@ -28,16 +19,8 @@
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-}
 
-.section__header--dark {
-  color: $dark;
-}
-
-.section__header--fancy {
-  color: darken($primary, 10%);
-}
-
-.section__header--light {
-  color: $white;
+  &::first-letter {
+    color: darken($primary, 10%);
+  }
 }
