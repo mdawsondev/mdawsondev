@@ -37,3 +37,7 @@
 .text-neutral-darker {
   color: darken($neutral, 20%);
 }
+
+.text-neutral-lighter {
+  color: lighten($neutral, 20%);
+}
