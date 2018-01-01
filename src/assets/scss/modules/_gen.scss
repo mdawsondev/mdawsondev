@@ -1,0 +1,29 @@
+.gen--flex {
+  display: flex;
+}
+
+.gen--hide-sm {
+  @include sm {
+    display: none;
+  }
+}
+
+.gen--link {
+  text-decoration: none;
+  transition: .25s all linear;
+}
+
+.gen--link-light {
+  color: $white;
+  &:hover {
+    color: lighten($primary, 25%);
+  }
+}
+
+.gen--middle {
+  align-self: center;
+}
+
+.gen--text-white {
+  color: $white;
+}
