@@ -3,47 +3,50 @@
     margin: -10rem auto 0;
   }
   @include sm {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin: 2rem;
+    flex-wrap: wrap;
+    margin: 0;
   }
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: -14rem auto 0;
   max-width: 70rem;
   position: relative;
   z-index: 1;
 }
 
-.skills__summary {
-  max-width: 30rem;
-  text-align: justify;
+.skills__inner {
+  @include sm {
+    margin: 0.2rem;
+  }
+  margin: 0 .5rem;
+}
+
+.skills__list {
+  & > li {
+    margin: 0.5rem 0;
+    font-size: .8rem;
+  }
 }
 
 .skills__certifications {
-  margin: 0 auto;
+  width: 100%;
+  & > table {
+    margin: 0 auto;
+    width: 80%;
+  }
 }
 
 .skills__icons {
   @include md {
     font-size: 5rem;
   }
-  @include sm {
-    display: none;
-  }
   color: darken($light, 3%);
   display: grid;
   font-size: 8rem;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  max-width: 60rem;
   margin: 0 auto;
-}
-
-.skills__icons--center {
-  justify-self: center;
+  overflow: hidden;
+  justify-items: center;
 }
 
 .skills__leader {
@@ -53,30 +56,5 @@
   }
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  margin: 2rem auto 0;
-  max-width: 80rem;
-}
-
-.skills__certification-title {
-  font-size: 1.1rem;
-  & > a {
-    color: darken($primary, 20%);
-  }
-}
-
-.skills__certification-hours {
-  @include sm {
-    padding-left: 2rem;
-  }
-  padding-left: 5rem;
-}
-
-.skills__title {
-  color: $neutral;
-  font-size: 1.7rem;
-  text-align: center;
-}
-
-.skills__title--fancy {
-  color: lighten($primary, 20%);
+  margin: 0 auto;
 }

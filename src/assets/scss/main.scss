@@ -1,19 +1,22 @@
 @import './settings';
 @import './variables/colors';
+@import './modules/gen';
+@import './modules/text';
+
 @import './modules/about';
 @import './modules/button';
 @import './modules/footer-main';
-@import './modules/gen';
 @import './modules/hero';
 @import './modules/nav-main';
 @import './modules/particles';
 @import './modules/portfolio';
 @import './modules/section';
 @import './modules/skills';
-@import './modules/text';
 @import './modules/vertical-break';
 @import './modules/welcome';
 @import './modules/wrapper';
+
+@import './modules/hide';
 
 
 body {

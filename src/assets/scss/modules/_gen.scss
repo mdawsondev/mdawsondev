@@ -18,24 +18,6 @@
   display: flex;
 }
 
-.gen--hide-sm {
-  @include sm {
-    display: none;
-  }
-}
-
-.gen--hide-md {
-  @include md {
-    display: none;
-  }
-}
-
-.gen--hide-lg {
-  @include lg {
-    display: none;
-  }
-}
-
 .gen--link {
   color: $white;
   text-decoration: none;

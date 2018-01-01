@@ -1,0 +1,17 @@
+.hide-sm {
+  @include sm {
+    display: none;
+  }
+}
+
+.hide-md {
+  @include md {
+    display: none;
+  }
+}
+
+.hide-lg {
+  @include lg {
+    display: none;
+  }
+}
