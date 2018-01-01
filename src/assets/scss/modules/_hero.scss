@@ -9,12 +9,7 @@
   flex-direction: column;
   height: 100%;
   justify-content: center;
-}
-
-.hero__inner--fancy {
-  color: $white;
-  cursor: default;
-  text-shadow: .2rem .2rem 3rem $black;
+  text-shadow: .2rem .2rem 2rem $black;
 }
 
 .hero__slider {
