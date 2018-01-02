@@ -1,0 +1,27 @@
+.input {
+  border-radius: 0.3rem;
+  border: 1px solid lighten($neutral, 20%);
+  padding: .5rem;
+  outline: 0;
+  min-width: 3rem;
+  box-sizing: border-box;
+  &:focus {
+    border: 1px solid lighten($primary, 20%);
+  }
+  &::placeholder {
+    color: lighten($neutral, 30%);
+  }
+}
+
+.input--m {
+  margin: .3rem
+}
+
+.input--p {
+  padding: .3rem
+}
+
+.no-resize {
+  resize: vertical;
+}
+

@@ -37,3 +37,9 @@
     @content;
   }
 }
+
+@mixin fs {
+  @media (min-width: 1600px) {
+    @content;
+  }
+}

@@ -1,0 +1,35 @@
+.contact__container {
+  @include md {
+    display: flex;
+    flex-direction: column;
+  }
+  display: grid;
+  grid-template: auto / 2fr 1fr;
+  margin: 0 auto;
+}
+
+.contact__form {
+  @include xl {
+    padding: 1.2rem
+  }
+  @include md {
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 0rem;
+  }
+  @include sm {
+    padding: .5rem;
+  }
+  padding: 2rem 5rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.contact__sources {
+  @include md {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 2rem;
+  }
+  padding: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+}

@@ -1,0 +1,50 @@
+.contact__grid {
+  @include lg {
+    display: flex;
+    flex-direction: column;
+    & * {
+      margin: .3rem 0;
+    }
+  }
+  display: grid;
+  padding: 1rem;
+  grid-gap: 1rem;
+  overflow: hidden;
+  max-width: 100%;
+  grid-template-areas:
+    "g-r1a g-r1a g-r1b g-r1b"
+    "g-r2a g-r2a g-r2b g-r2b"
+    "g-r3 g-r3 g-r3 g-r3"
+    ". . . g-r4";
+  & > * {
+    min-width: 1rem;
+  }
+}
+
+.contact__g-r1a {
+  grid-area: g-r1a;
+}
+
+.contact__g-r1b {
+  grid-area: g-r1b;
+}
+
+.contact__g-r2a {
+  grid-area: g-r2a;
+}
+
+.contact__g-r2b {
+  grid-area: g-r2b;
+}
+
+.contact__g-r3 {
+  grid-area: g-r3;
+}
+
+.contact__g-r4 {
+  grid-area: g-r4;
+}
+
+.contact__g-min {
+  
+}

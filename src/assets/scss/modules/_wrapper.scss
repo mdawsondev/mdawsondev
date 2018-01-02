@@ -1,6 +1,7 @@
 .wrapper {
-  box-sizing: border-box;
-  margin: 0 10rem;
+  @include fs {
+    margin: 0 20rem;
+  }
   @include xl {
     margin: 0 5rem;
   }
@@ -13,4 +14,6 @@
   @include sm {
     margin: 0 .2rem;
   }
+  box-sizing: border-box;
+  margin: 0 10rem;
 }
