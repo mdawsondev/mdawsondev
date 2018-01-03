@@ -1,7 +1,9 @@
-particlesJS.load('particles-js', './assets/json/particles.json');
+import './modules/_whyBtn';
 
-function init() {
+const init = () => {
   const links = document.querySelectorAll(".nav-main__item");
+  const particles = require('../json/particles.json');
+  particlesJS('particles-js', particles);
   links.forEach( (e) => {
     e.addEventListener("click", (el) => {
       el.currentTarget.classList.toggle("nav-main__item--active");

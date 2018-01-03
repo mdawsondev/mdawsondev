@@ -21,9 +21,11 @@
   justify-content: center;
 }
 
+// See '_why.scss' for hover settings.
 .portfolio__help {
   border: 1px dashed $light;
   border-radius: 1rem;
+  cursor: help;
   font-size: .6rem;
   line-height: 1.2rem;
   margin: -.5rem 0 0 6rem;

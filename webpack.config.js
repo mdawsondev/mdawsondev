@@ -3,7 +3,7 @@ const ExtractTextPlugin      = require("extract-text-webpack-plugin"),
       WebpackDeletePlugin    = require("webpack-delete-plugin");
 
 const files = {
-  bundle: "./src/index.js",
+  app: "./src/assets/js/main.js",
   main: "./src/assets/scss/main.scss"
 }
 
@@ -11,6 +11,19 @@ const config = {
   entry: files,
   module: {
     rules: [
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              emitFile: false,
+              publicPath: '../img/'
+            }
+          }
+        ]
+      },
       // Sass Processing
       {
         test: /\.(sass|scss)$/,
@@ -38,6 +51,7 @@ const config = {
     filename: "[name].js"
   },
   plugins: [
+    require('autoprefixer'),
     new ExtractTextPlugin("./public/css/[name].css"),
     new WebpackDeletePlugin(["./src/main.js"])
   ]

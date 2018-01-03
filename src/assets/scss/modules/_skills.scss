@@ -16,7 +16,7 @@
 
 .skills__inner {
   @include sm {
-    margin: 0.2rem;
+    margin: .2rem;
   }
   margin: 0 .5rem;
 }
@@ -40,13 +40,13 @@
   @include md {
     font-size: 5rem;
   }
-  color: darken($light, 2%);
+  color: lighten($light, 4%);
   display: grid;
   font-size: 8rem;
   grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
   margin: 0 auto;
   overflow: hidden;
-  justify-items: center;
 }
 
 .skills__leader {

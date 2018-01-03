@@ -1,0 +1,16 @@
+.abc {
+  background-color: rgba(0, 0, 0, .95);
+  border: 1px solid $primary;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  color: white;
+  font-size: .7rem;
+  opacity: 0;
+  padding: 1rem;
+  pointer-events: none;
+  position: absolute;
+  transform: translate(-3rem, -.5rem);
+  transition: .5s all ease-out;
+  width: 8rem;
+}
