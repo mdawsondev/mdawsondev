@@ -12,13 +12,9 @@
   }
 }
 
-.portfolio__grid {
-  @include sm {
-    grid-template-columns: repeat(auto-fit, 150px);
-  }
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 300px);
-  justify-content: center;
+.portfolio__detail {
+  width: inherit;
+  height: inherit;
 }
 
 // See '_why.scss' for hover settings.
@@ -50,12 +46,4 @@
 .portfolio__icons {
   display: flex;
   justify-content: space-around;
-}
-
-.portfolio__img {
-  transition: all .3s linear;
-
-  &:hover {
-    transform: scale(1.1, 1.1)
-  }
 }

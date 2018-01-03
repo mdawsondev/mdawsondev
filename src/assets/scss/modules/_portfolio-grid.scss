@@ -1,0 +1,75 @@
+$item-size: 18.75rem;
+$item-size-sm: $item-size/2;
+$portfolio-item-seconds: .3s;
+
+.contain-item {
+  @include sm {
+    max-height: $item-size-sm;
+    max-width: $item-size-sm;
+    overflow: hidden;
+  }
+  height: 100%;
+  max-height: $item-size;
+  max-width: $item-size;
+  transition: all $portfolio-item-seconds linear;
+  width: 100%;
+}
+
+.portfolio__grid {
+  @include sm {
+    grid-template-columns: repeat(auto-fit, $item-size-sm);
+  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, $item-size);
+  justify-content: center;
+}
+
+.portfolio__grid-container {
+  @extend .contain-item;
+
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
+}
+
+.portfolio__overlay {
+  @extend .contain-item;
+  background-color: $black;
+  opacity: 0;
+  position: absolute;
+}
+
+.portfolio__detail {
+  @include sm {
+    & > * {
+      font-size: .8rem;
+    }
+  }
+  @extend .contain-item;
+  box-sizing: border-box;
+  color: $white;
+  opacity: 0;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  & > h3, p {
+    pointer-events: none;
+  }
+}
+
+.portfolio__detail-icons {
+  @include sm {
+    padding: 0;
+  }
+  justify-content: space-around;
+  padding: 2rem;
+  pointer-events: none;
+}
+
+.portfolio--active {
+  opacity: 1;
+  pointer-events: auto;
+  &-lower {
+    opacity: .7;
+  }
+}

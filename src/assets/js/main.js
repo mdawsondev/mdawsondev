@@ -1,3 +1,4 @@
+import './modules/_portfolioHover';
 import './modules/_whyBtn';
 
 const init = () => {

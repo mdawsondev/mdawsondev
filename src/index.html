@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./public/css/main.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
   <script defer src="./app.js"></script>
 </head>
 
@@ -54,7 +55,7 @@
     <div class="hero__inner gen--cursor-def text-white">
       <h1 class="hero__title animated flipInX">Matt Dawson</h1>
       <h3 class="hero__subtitle animated fadeIn">Web Developer</h3>
-      <i class="hero__slider fas fa-angle-down fa-5x animated fadeInDown infinite"></i>
+      <a class="text-white gen--cursor-def" href="#welcome"><i class="hero__slider fas fa-angle-down fa-5x animated fadeInDown infinite"></i></a>
     </div>
   </div>
 
@@ -145,7 +146,8 @@
         <div class="text-center">
           <p class="portfolio__help hide-md gen--cursor-def text-white">
             <b>Why?</b>
-            <p class="abc">GitHub is <em>the</em> developer's hub. It houses all of my main repos.</p>
+            <p class="abc hide-sm">GitHub is
+              <em>the</em> developer's hub. It houses all of my main repos.</p>
           </p>
           <a class="gen--link" href="https://github.com/mdawsondev" target="_blank">
             <i class="portfolio__icon fab fa-github fa-6x"></i>
@@ -157,7 +159,7 @@
         <div class="text-center">
           <p class="portfolio__help hide-md gen--cursor-def text-white">
             <b>Why?</b>
-            <p class="abc">CodePen is great for stand-alone scripts! There's no need to waste a repo when you're playing around.</p>
+            <p class="abc hide-sm">CodePen is great for stand-alone scripts! There's no need to waste a repo when you're playing around.</p>
           </p>
           <a class="gen--link" href="https://codepen.io/mdawsondev" target="_blank">
             <i class="portfolio__icon fab fa-codepen fa-6x"></i>
@@ -169,7 +171,7 @@
         <div class="text-center">
           <p class="portfolio__help hide-md gen--cursor-def text-white">
             <b>Why?</b>
-            <p class="abc">Node.js has taken over the JavaScript scene, and npm releases are key to the ecosystem.</p>
+            <p class="abc hide-sm">Node.js has taken over the JavaScript scene, and npm releases are key to the ecosystem.</p>
           </p>
           <a class="gen--link" href="https://www.npmjs.com/~mdawsondev" target="_blank">
             <i class="portfolio__icon fab fa-npm fa-6x"></i>
@@ -181,14 +183,155 @@
       </div>
 
       <div class="portfolio__grid">
-        <img class="portfolio__img" src="./public/img/projects/calc.jpg">
-        <img class="portfolio__img" src="./public/img/projects/name.jpg">
-        <img class="portfolio__img" src="./public/img/projects/cve.jpg">
-        <img class="portfolio__img" src="./public/img/projects/weather.jpg">
-        <img class="portfolio__img" src="./public/img/projects/plugin.jpg">
-        <img class="portfolio__img" src="./public/img/projects/yelp.jpg">
-        <img class="portfolio__img" src="./public/img/projects/fcc.jpg">
-        <img class="portfolio__img" src="./public/img/projects/tribute.jpg">
+        <div class="portfolio__grid-container">
+          <div class="detail__helper">
+            <div class="portfolio__overlay"></div>
+            <div class="portfolio__detail">
+              <h3 class="text-center">Phoney Calculator</h3>
+              <p class="hide-sm">Responsive calculator built with JavaScript, HTML, and CSS, designed to look like a fake phone.</p>
+              <div class="gen--flex portfolio__detail-icons">
+                <a class="gen--link text-center" href="https://mdawsondev.github.io/phoney-calculator" target="_blank">
+                  <i class="fas fa-camera fa-2x"></i>
+                  <br>Live</a>
+                <a class="gen--link text-center" href="https://github.com/mdawsondev/phoney-calculator" target="_blank">
+                  <i class="fab fa-github fa-2x"></i>
+                  <br>Source</a>
+              </div>
+            </div>
+          </div>
+          <img class="portfolio__img" src="./public/img/projects/calc.jpg">
+        </div>
+        <div class="portfolio__grid-container">
+          <div class="detail__helper">
+            <div class="portfolio__overlay"></div>
+            <div class="portfolio__detail">
+              <h3 class="text-center">incogni.me</h3>
+              <p class="">Single-page username generator built with JavaScript, HTML, and Sass.
+              </p>
+              <div class="gen--flex portfolio__detail-icons">
+                <a class="gen--link text-center" href="https://mdawsondev.github.io/incogni.me/dist/index.html" target="_blank">
+                  <i class="fas fa-camera fa-2x"></i>
+                  <br>Live</a>
+                <a class="gen--link text-center" href="https://github.com/mdawsondev/incogni.me" target="_blank">
+                  <i class="fab fa-github fa-2x"></i>
+                  <br>Source</a>
+              </div>
+            </div>
+          </div>
+          <img class="portfolio__img" src="./public/img/projects/name.jpg">
+        </div>
+        <div class="portfolio__grid-container">
+          <div class="detail__helper">
+            <div class="portfolio__overlay"></div>
+            <div class="portfolio__detail">
+              <h3 class="text-center">Clear View Escapes:
+                <br> Sass Edition</h3>
+              <p class="hide-sm">Sass edition of Brad Shiff's Clear View Escapes.
+              </p>
+              <div class="gen--flex portfolio__detail-icons">
+                <a class="gen--link text-center" href="https://mdawsondev.github.io/cve-sass" target="_blank">
+                  <i class="fas fa-camera fa-2x"></i>
+                  <br>Live</a>
+                <a class="gen--link text-center" href="https://github.com/mdawsondev/cve-sass" target="_blank">
+                  <i class="fab fa-github fa-2x"></i>
+                  <br>Source</a>
+              </div>
+            </div>
+          </div>
+          <img class="portfolio__img" src="./public/img/projects/cve.jpg">
+        </div>
+        <div class="portfolio__grid-container">
+          <div class="detail__helper">
+            <div class="portfolio__overlay"></div>
+            <div class="portfolio__detail">
+              <h3 class="text-center">Local Weather</h3>
+              <p class="hide-sm">Browser-based weather application that pulls the local forecast.
+              </p>
+              <div class="gen--flex portfolio__detail-icons">
+                <a class="gen--link text-center" href="https://mdawsondev.github.io/weather-app/" target="_blank">
+                  <i class="fas fa-camera fa-2x"></i>
+                  <br>Live</a>
+                <a class="gen--link text-center" href="https://github.com/mdawsondev/weather-app" target="_blank">
+                  <i class="fab fa-github fa-2x"></i>
+                  <br>Source</a>
+              </div>
+            </div>
+          </div>
+          <img class="portfolio__img" src="./public/img/projects/weather.jpg">
+        </div>
+        <div class="portfolio__grid-container">
+          <div class="detail__helper">
+            <div class="portfolio__overlay"></div>
+            <div class="portfolio__detail">
+              <h3 class="text-center">webpack-delete-plugin</h3>
+              <p class="hide-sm">Post-process file deletion plugin for Webpack.
+              </p>
+              <div class="gen--flex portfolio__detail-icons">
+                <a class="gen--link text-center" href="https://www.npmjs.com/package/webpack-delete-plugin" target="_blank">
+                  <i class="fas fa-camera fa-2x"></i>
+                  <br>Live</a>
+                <a class="gen--link text-center" href="https://github.com/mdawsondev/webpack-delete-plugin" target="_blank">
+                  <i class="fab fa-github fa-2x"></i>
+                  <br>Source</a>
+              </div>
+            </div>
+          </div>
+          <img class="portfolio__img" src="./public/img/projects/plugin.jpg">
+        </div>
+        <div class="portfolio__grid-container">
+          <div class="detail__helper">
+            <div class="portfolio__overlay"></div>
+            <div class="portfolio__detail">
+              <h3 class="text-center">Yelp Camp</h3>
+              <p class="hide-sm">Express based MongoDB hosted application.</p>
+              <div class="gen--flex portfolio__detail-icons">
+                <a class="gen--link text-center" href="https://aqueous-fortress-52176.herokuapp.com/" target="_blank">
+                  <i class="fas fa-camera fa-2x"></i>
+                  <br>Live</a>
+                <a class="gen--link text-center" href="https://github.com/mdawsondev/yelpcamp" target="_blank">
+                  <i class="fab fa-github fa-2x"></i>
+                  <br>Source</a>
+              </div>
+            </div>
+          </div>
+          <img class="portfolio__img" src="./public/img/projects/yelp.jpg">
+        </div>
+        <div class="portfolio__grid-container">
+          <div class="detail__helper">
+            <div class="portfolio__overlay"></div>
+            <div class="portfolio__detail">
+              <h3 class="text-center">Free Code Camp: Archive</h3>
+              <p class="hide-sm">Archive of no-longer active FCC projects.</p>
+              <div class="gen--flex portfolio__detail-icons">
+                <a class="gen--link text-center" href="#" target="_blank">
+                  <i class="fas fa-camera fa-2x"></i>
+                  <br>Live</a>
+                <a class="gen--link text-center" href="https://github.com/mdawsondev/fcc-archive">
+                  <i class="fab fa-github fa-2x"></i>
+                  <br>Source</a>
+              </div>
+            </div>
+          </div>
+          <img class="portfolio__img" src="./public/img/projects/fcc.jpg">
+        </div>
+        <div class="portfolio__grid-container">
+          <div class="detail__helper">
+            <div class="portfolio__overlay"></div>
+            <div class="portfolio__detail">
+              <h3 class="text-center">Quake Tribute</h3>
+              <p class="hide-sm">Tribute page for Quake: mini Bootstrap project.</p>
+              <div class="gen--flex portfolio__detail-icons">
+                <a class="gen--link text-center" href="https://codepen.io/mdawsondev/full/veVmXJ/" target="_blank">
+                  <i class="fas fa-camera fa-2x"></i>
+                  <br>Live</a>
+                <a class="gen--link text-center" href="https://codepen.io/mdawsondev/pen/veVmXJ/" target="_blank">
+                  <i class="fab fa-codepen fa-2x"></i>
+                  <br>Source</a>
+              </div>
+            </div>
+          </div>
+          <img class="portfolio__img" src="./public/img/projects/tribute.jpg">
+        </div>
       </div>
 
       <div>
@@ -380,7 +523,8 @@
             <a class="gen--link text-primary-lighter" href="https://daneden.github.io/animate.css/">Animate.css</a>,
             <a class="gen--link text-primary-lighter" href="http://fontawesome.io/">Font Awesome</a>,
             <a class="gen--link text-primary-lighter" href="https://necolas.github.io/normalize.css/">Normalize.css</a>,
-            <a class="gen--link text-primary-lighter" href="http://vincentgarreau.com/particles.js/">particles.js</a>
+            <a class="gen--link text-primary-lighter" href="http://vincentgarreau.com/particles.js/">particles.js</a>,
+            <a class="gen--link text-primary-lighter" href="https://github.com/cferdinandi/smooth-scroll">Smooth Scroll</a>
           </p>
           <p>
             <b>Tech</b>: VSCode, git, GitHub, webpack, yarn</p>
@@ -505,6 +649,9 @@
     </div>
   </footer>
 
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
 </body>
 
 </html>
