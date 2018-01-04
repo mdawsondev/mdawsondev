@@ -367,7 +367,7 @@
 
 .section {
   box-sizing: border-box;
-  padding: 5rem 1rem; }
+  padding: 3.5rem 1rem; }
   @media (max-width: 768px) {
     .section {
       padding: 2rem 1rem; } }
@@ -377,7 +377,7 @@
   border: 0;
   height: 3px;
   margin: 0 auto 2rem;
-  width: 10rem; }
+  width: 80%; }
 
 .section__rule--md {
   display: none; }
@@ -391,7 +391,7 @@
       width: 50%; } }
 
 .section__v-rule {
-  background-color: #b7dbff;
+  background-color: #84c2ff;
   border: 0;
   height: 80%;
   width: 3px;
@@ -402,8 +402,10 @@
   margin: 0;
   text-align: center;
   text-transform: uppercase; }
-  .section__header::first-letter {
-    color: #0077ea; }
+
+.section__head-container {
+  margin: 0 auto;
+  width: fit-content; }
 
 .skills__container {
   display: flex;
@@ -545,7 +547,7 @@
     display: none; } }
 
 body {
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Roboto, Arial, Helvetica, sans-serif; }
 
 p {
   line-height: 1.5rem; }

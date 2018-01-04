@@ -5,11 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:title" content="Matt Dawson - Web Development">
+  <meta property="og:description" content="Offering tour packages for individuals or groups.">
+  <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
+  <meta property="og:url" content="http://euro-travel-example.com/index.htm">
   <title>Matt Dawson - Web Development</title>
   <link rel="icon" href="./public/img/favicon.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200|Roboto">
   <link rel="stylesheet" href="./public/css/main.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.4.1/lazyload.min.js"></script>
@@ -64,8 +68,11 @@
 
   <section class="section gen--bg-light" id="welcome">
     <div class="wrapper">
-      <h2 class="section__header text-dark">Welcome</h2>
-      <hr class="section__rule">
+
+      <div class="section__head-container">
+        <h2 class="section__header text-dark">Welcome</h2>
+        <hr class="section__rule">
+      </div>
 
       <p class="text-neutral text-center">
         <b>To streamline your experience, I've created a personalized welcome messages!</b>
@@ -157,8 +164,10 @@
 
   <section class="section gen--bg-dark" id="portfolio">
     <div class="wrapper">
-      <h2 class="section__header text-white">Portfolio</h2>
-      <hr class="section__rule">
+      <div class="section__head-container">
+        <h2 class="section__header text-white">Portfolio</h2>
+        <hr class="section__rule">
+      </div>
 
       <div class="portfolio__icons">
         <div class="text-center">
@@ -386,11 +395,11 @@
         <p class="portfolio__footer-subtitle text-neutral text-center">Check it out!</p>
         <ul class="portfolio__footer-list text-neutral-lighter">
           <li>
-            <i class="fas fa-rocket"></i>
+            <i class="fas fa-rocket text-white"></i>
             <a class="gen--link text-primary-lighter" href="#">Lessons</a>: Upcoming YouTube series and accompanying website to help teach beginners.
           </li>
           <li>
-            <i class="fas fa-rocket"></i>
+            <i class="fas fa-rocket text-white"></i>
             <a class="gen--link text-primary-lighter" href="https://github.com/mdawsondev/munchkin">Munchkin</a>: Designed to be an small, ultra user-friendly HTML/CSS framework.
           </li>
           <li>
@@ -402,8 +411,11 @@
 
   <section class="section gen--bg-light" id="skills">
     <div class="wrapper">
-      <h2 class="section__header text-dark">Skills</h2>
-      <hr class="section__rule">
+
+      <div class="section__head-container">
+        <h2 class="section__header text-dark">Skills</h2>
+        <hr class="section__rule">
+      </div>
 
       <div class="skills__leader">
         <div class="text-justify">
@@ -543,10 +555,13 @@
 
   <section class="section gen--bg-dark text-white" id="about">
     <div class="wrapper">
-      <h2 class="section__header text-white">About</h2>
-      <hr class="section__rule">
-      <div class="about__container">
 
+      <div class="section__head-container">
+        <h2 class="section__header text-white">About</h2>
+        <hr class="section__rule">
+      </div>
+
+      <div class="about__container">
         <div class="about__me text-justify">
           <h2 class="text-neutral-lighter text-center">
             <i class="fas fa-user text-primary-lighter"></i> About Me</h2>
@@ -599,41 +614,43 @@
 
   <section class="section gen--bg-light" id="contact">
     <div class="wrapper">
-      <h2 class="section__header text-dark">
+
+      <div class="section__head-container">
         <h2 class="section__header text-dark">Contact</h2>
         <hr class="section__rule">
+      </div>
 
-        <div class="contact__container">
-          <div class="contact__form gen--bg-white">
-            <form action="https://formspree.io/hello@mdawsondev.com" id="contact" class="contact__grid" method="POST">
-              <input class="input contact__g-r1a " name="first" placeholder="First Name" type="text" required>
-              <input class="input contact__g-r1b " name="last" placeholder="Last Name (Optional)" type="text">
-              <input class="input contact__g-r2a " name="email" placeholder="E-mail" type="email" required>
-              <input class="input contact__g-r2b " name="phone" placeholder="Phone (Optional)" type="text">
-              <textarea class="input no-resize contact__g-r3" name="message" placeholder="Enter your message here" rows="8" required></textarea>
-              <button class="btn--primary btn--primary-glow contact__g-r4" type="submit">Submit</button>
-            </form>
-          </div>
-          <div class="contact__sources gen--bg-dark text-neutral">
-            <h2 class="text-center text-neutral-lighter">Contact Information</h2>
-            <p>
-              <i class="fa fa-user" aria-hidden="true"></i> Matt Dawson</p>
-            <p>
-              <i class="fa fa-map-marker-alt" aria-hidden="true"></i> Boone, North Carolina</p>
-            <p>
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <a class="gen--link text-primary-lighter" href="mailto:mdawsondev@gmail.com">Email Me Directly</a>
-            </p>
-            <p>
-              <i class="fa fa-comment" aria-hidden="true"></i>
-              <a class="gen--link text-primary-lighter" href="https://www.reddit.com/message/compose/?to=mdawsondev">Message Me on Reddit</a>
-            </p>
-            <p>
-              <i class="fab fa-github" aria-hidden="true"></i>
-              <a class="gen--link text-primary-lighter" href="https://github.com/mdawsondev">Tag Me on GitHub</a>
-            </p>
-          </div>
+      <div class="contact__container">
+        <div class="contact__form gen--bg-white">
+          <form action="https://formspree.io/hello@mdawsondev.com" id="contact" class="contact__grid" method="POST">
+            <input class="input contact__g-r1a " name="first" placeholder="First Name" type="text" required>
+            <input class="input contact__g-r1b " name="last" placeholder="Last Name (Optional)" type="text">
+            <input class="input contact__g-r2a " name="email" placeholder="E-mail" type="email" required>
+            <input class="input contact__g-r2b " name="phone" placeholder="Phone (Optional)" type="text">
+            <textarea class="input no-resize contact__g-r3" name="message" placeholder="Enter your message here" rows="8" required></textarea>
+            <button class="btn--primary btn--primary-glow contact__g-r4" type="submit">Submit</button>
+          </form>
         </div>
+        <div class="contact__sources gen--bg-dark text-neutral">
+          <h2 class="text-center text-neutral-lighter">Contact Information</h2>
+          <p>
+            <i class="fa fa-user" aria-hidden="true"></i> Matt Dawson</p>
+          <p>
+            <i class="fa fa-map-marker-alt" aria-hidden="true"></i> Boone, North Carolina</p>
+          <p>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a class="gen--link text-primary-lighter" href="mailto:mdawsondev@gmail.com">Email Me Directly</a>
+          </p>
+          <p>
+            <i class="fa fa-comment" aria-hidden="true"></i>
+            <a class="gen--link text-primary-lighter" href="https://www.reddit.com/message/compose/?to=mdawsondev">Message Me on Reddit</a>
+          </p>
+          <p>
+            <i class="fab fa-github" aria-hidden="true"></i>
+            <a class="gen--link text-primary-lighter" href="https://github.com/mdawsondev">Tag Me on GitHub</a>
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 

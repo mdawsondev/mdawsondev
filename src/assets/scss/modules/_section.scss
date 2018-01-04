@@ -3,7 +3,7 @@
     padding: 2rem 1rem;
   }
   box-sizing: border-box;
-  padding: 5rem 1rem;
+  padding: 3.5rem 1rem;
 }
 
 .section__rule {
@@ -11,7 +11,7 @@
   border: 0;
   height: 3px;
   margin: 0 auto 2rem;
-  width: 10rem;
+  width: 80%;
 }
 
 .section__rule--md {
@@ -27,7 +27,7 @@
 }
 
 .section__v-rule {
-  background-color: lighten($primary, 30%);
+  background-color: lighten($primary, 20%);
   border: 0;
   height: 80%;
   width: 3px;
@@ -40,7 +40,12 @@
   text-align: center;
   text-transform: uppercase;
 
-  &::first-letter {
-    color: darken($primary, 10%);
-  }
+  // &::first-letter {
+  //   color: $primary
+  // }
+}
+
+.section__head-container {
+  margin: 0 auto;
+  width: fit-content;
 }
