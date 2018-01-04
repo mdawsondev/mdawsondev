@@ -488,6 +488,9 @@
 
 .welcome__list {
   text-align: initial; }
+  @media (max-width: 768px) {
+    .welcome__list {
+      text-align: center; } }
   .welcome__list > li {
     margin: .5rem; }
 

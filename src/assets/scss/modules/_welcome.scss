@@ -21,6 +21,9 @@
 }
 
 .welcome__list {
+  @include md {
+    text-align: center;
+  }
   text-align: initial;
   & > li {
     margin: .5rem;
