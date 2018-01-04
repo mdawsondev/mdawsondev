@@ -39,7 +39,7 @@ const config = {
       {
         test: /\.js$/,
         loader: "babel-loader",
-        query: {
+        options: {
           presets: ["env"]
         }
       }

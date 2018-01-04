@@ -7,11 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Matt Dawson - Web Development</title>
   <link rel="icon" href="./public/img/favicon.png" type="image/png">
-  <link rel="stylesheet" href="./public/css/vendor/animate.css">
-  <link rel="stylesheet" href="./public/css/vendor/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200">
   <link rel="stylesheet" href="./public/css/main.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.4.1/lazyload.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
   <script defer src="./app.js"></script>
@@ -30,7 +30,7 @@
         <nav class="gen--middle">
           <ul class="gen--flex">
             <li>
-              <a class="nav-main__item gen--link nav-main__item--active" href="#welcome">Home</a>
+              <a class="nav-main__item gen--link" href="#welcome">Home</a>
             </li>
             <li>
               <a class="nav-main__item gen--link" href="#portfolio">Portfolio</a>
@@ -55,7 +55,7 @@
     <div class="hero__inner gen--cursor-def text-white">
       <h1 class="hero__title animated flipInX">Matt Dawson</h1>
       <h3 class="hero__subtitle animated fadeIn">Web Developer</h3>
-      <a class="text-white gen--cursor-def" href="#welcome"><i class="hero__slider fas fa-angle-down fa-5x animated fadeInDown infinite"></i></a>
+      <a class="hero__slider text-white gen--cursor-def" href="#welcome"><i class="fas fa-angle-down fa-5x animated fadeInDown infinite"></i></a>
     </div>
   </div>
 
@@ -199,7 +199,7 @@
               </div>
             </div>
           </div>
-          <img class="portfolio__img" src="./public/img/projects/calc.jpg">
+          <img class="portfolio__img" data-src="./public/img/projects/calc.jpg">
         </div>
         <div class="portfolio__grid-container">
           <div class="detail__helper">
@@ -218,7 +218,7 @@
               </div>
             </div>
           </div>
-          <img class="portfolio__img" src="./public/img/projects/name.jpg">
+          <img class="portfolio__img" data-src="./public/img/projects/name.jpg">
         </div>
         <div class="portfolio__grid-container">
           <div class="detail__helper">
@@ -238,7 +238,7 @@
               </div>
             </div>
           </div>
-          <img class="portfolio__img" src="./public/img/projects/cve.jpg">
+          <img class="portfolio__img" data-src="./public/img/projects/cve.jpg">
         </div>
         <div class="portfolio__grid-container">
           <div class="detail__helper">
@@ -257,7 +257,7 @@
               </div>
             </div>
           </div>
-          <img class="portfolio__img" src="./public/img/projects/weather.jpg">
+          <img class="portfolio__img" data-src="./public/img/projects/weather.jpg">
         </div>
         <div class="portfolio__grid-container">
           <div class="detail__helper">
@@ -276,7 +276,7 @@
               </div>
             </div>
           </div>
-          <img class="portfolio__img" src="./public/img/projects/plugin.jpg">
+          <img class="portfolio__img" data-src="./public/img/projects/plugin.jpg">
         </div>
         <div class="portfolio__grid-container">
           <div class="detail__helper">
@@ -294,7 +294,7 @@
               </div>
             </div>
           </div>
-          <img class="portfolio__img" src="./public/img/projects/yelp.jpg">
+          <img class="portfolio__img" data-src="./public/img/projects/yelp.jpg">
         </div>
         <div class="portfolio__grid-container">
           <div class="detail__helper">
@@ -312,7 +312,7 @@
               </div>
             </div>
           </div>
-          <img class="portfolio__img" src="./public/img/projects/fcc.jpg">
+          <img class="portfolio__img" data-src="./public/img/projects/fcc.jpg">
         </div>
         <div class="portfolio__grid-container">
           <div class="detail__helper">
@@ -330,7 +330,7 @@
               </div>
             </div>
           </div>
-          <img class="portfolio__img" src="./public/img/projects/tribute.jpg">
+          <img class="portfolio__img" data-src="./public/img/projects/tribute.jpg">
         </div>
       </div>
 
@@ -502,7 +502,7 @@
         <div class="about__me text-justify">
           <h2 class="text-neutral-lighter text-center">
             <i class="fas fa-user text-primary-lighter"></i> About Me</h2>
-          <img class="about__image" src="./public/img/matt.jpg">
+          <img class="about__image" data-src="./public/img/matt.jpg">
           <p>Prior to web development, I worked as an artist, writer, and amateur programmer. After freelancing for a while,
             I decided I wanted more stability in my work.</p>
           <p>I've built websites as a hobby since I was young, and the more I looked into career opportunities, the more I fell
@@ -522,6 +522,7 @@
             <b>Libraries</b>:
             <a class="gen--link text-primary-lighter" href="https://daneden.github.io/animate.css/">Animate.css</a>,
             <a class="gen--link text-primary-lighter" href="http://fontawesome.io/">Font Awesome</a>,
+            <a class="gen--link text-primary-lighter" href="https://github.com/verlok/lazyload">lazyload</a>,
             <a class="gen--link text-primary-lighter" href="https://necolas.github.io/normalize.css/">Normalize.css</a>,
             <a class="gen--link text-primary-lighter" href="http://vincentgarreau.com/particles.js/">particles.js</a>,
             <a class="gen--link text-primary-lighter" href="https://github.com/cferdinandi/smooth-scroll">Smooth Scroll</a>
@@ -650,6 +651,7 @@
   </footer>
 
   <script>
+    var myLazyLoad = new LazyLoad();
     var scroll = new SmoothScroll('a[href*="#"]');
   </script>
 </body>

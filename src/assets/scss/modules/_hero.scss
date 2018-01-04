@@ -13,10 +13,12 @@
 }
 
 .hero__slider {
-  animation-delay: 2s;
-  animation-duration: 4s;
   bottom: 0;
   position: absolute;
+  & > * {
+    animation-delay: 2s;
+    animation-duration: 4s;
+  }
 }
 
 .hero__subtitle {

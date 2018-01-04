@@ -186,10 +186,11 @@
   text-shadow: 0.2rem 0.2rem 2rem #000; }
 
 .hero__slider {
-  animation-delay: 2s;
-  animation-duration: 4s;
   bottom: 0;
   position: absolute; }
+  .hero__slider > * {
+    animation-delay: 2s;
+    animation-duration: 4s; }
 
 .hero__subtitle {
   animation-delay: 1s;
@@ -475,10 +476,10 @@
 
 .abc {
   background-color: rgba(0, 0, 0, 0.95);
-  border: 1px solid #1e90ff;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   border-top-left-radius: 1rem;
+  border: 1px solid #1e90ff;
   color: white;
   font-size: .7rem;
   opacity: 0;
@@ -488,6 +489,9 @@
   transform: translate(-3rem, -0.5rem);
   transition: .5s all ease-out;
   width: 8rem; }
+
+.abc--visible {
+  opacity: 1; }
 
 .wrapper {
   box-sizing: border-box;
