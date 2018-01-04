@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200">
   <link rel="stylesheet" href="./public/css/main.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.4.1/lazyload.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.4.1/lazyload.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
   <script defer src="./app.js"></script>
@@ -55,7 +56,9 @@
     <div class="hero__inner gen--cursor-def text-white">
       <h1 class="hero__title animated flipInX">Matt Dawson</h1>
       <h3 class="hero__subtitle animated fadeIn">Web Developer</h3>
-      <a class="hero__slider text-white gen--cursor-def" href="#welcome"><i class="fas fa-angle-down fa-5x animated fadeInDown infinite"></i></a>
+      <a class="hero__slider text-white gen--cursor-def" href="#welcome">
+        <i class="fas fa-angle-down fa-5x animated fadeInDown infinite"></i>
+      </a>
     </div>
   </div>
 
@@ -77,13 +80,23 @@
           <h4 class="text-neutral-darker">Suggested Links</h4>
           <ul class="welcome__list">
             <li>
-              <a class="gen--link text-primary-darker" href="https://github.com/mdawsondev">
+              <a class="gen--link text-primary-darker" href="#contact">
+                <b>Contact</b>
+              </a>
+            </li>
+            <li>
+              <a class="gen--link text-primary-darker" href="#projects">
+                <b>Projects</b>
+              </a>
+            </li>
+            <li>
+              <a class="gen--link text-primary-darker" href="https://github.com/mdawsondev" target="_blank">
                 <b>GitHub</b>
               </a>
             </li>
             <li>
-              <a class="gen--link text-primary-darker" href="#contact">
-                <b>Contact</b>
+              <a class="gen--link text-primary-darker" href="#about__site">
+                <b>Site Specs</b>
               </a>
             </li>
           </ul>
@@ -97,18 +110,23 @@
           <h4 class="text-neutral-darker">Suggested Links</h4>
           <ul class="welcome__list">
             <li>
-              <a class="gen--link text-primary-darker" href="#">
-                <b>Resume</b>
-              </a>
-            </li>
-            <li>
               <a class="gen--link text-primary-darker" href="#portfolio">
                 <b>Portfolio</b>
               </a>
             </li>
             <li>
+              <a class="gen--link text-primary-darker" href="#">
+                <b>Resume</b>
+              </a>
+            </li>
+            <li>
               <a class="gen--link text-primary-darker" href="#skills">
                 <b>Skills</b>
+              </a>
+            </li>
+            <li>
+              <a class="gen--link text-primary-darker" href="https://www.linkedin.com/in/mdawsondev/" target="_blank">
+                <b>LinkedIn</b>
               </a>
             </li>
           </ul>
@@ -146,7 +164,7 @@
         <div class="text-center">
           <p class="portfolio__help hide-md gen--cursor-def text-white">
             <b>Why?</b>
-            <p class="abc hide-sm">GitHub is
+            <p class="why__hover hide-sm">GitHub is
               <em>the</em> developer's hub. It houses all of my main repos.</p>
           </p>
           <a class="gen--link" href="https://github.com/mdawsondev" target="_blank">
@@ -159,7 +177,7 @@
         <div class="text-center">
           <p class="portfolio__help hide-md gen--cursor-def text-white">
             <b>Why?</b>
-            <p class="abc hide-sm">CodePen is great for stand-alone scripts! There's no need to waste a repo when you're playing around.</p>
+            <p class="why__hover hide-sm">CodePen is great for stand-alone scripts! There's no need to waste a repo when you're playing around.</p>
           </p>
           <a class="gen--link" href="https://codepen.io/mdawsondev" target="_blank">
             <i class="portfolio__icon fab fa-codepen fa-6x"></i>
@@ -171,7 +189,7 @@
         <div class="text-center">
           <p class="portfolio__help hide-md gen--cursor-def text-white">
             <b>Why?</b>
-            <p class="abc hide-sm">Node.js has taken over the JavaScript scene, and npm releases are key to the ecosystem.</p>
+            <p class="why__hover hide-sm">Node.js has taken over the JavaScript scene, and npm releases are key to the ecosystem.</p>
           </p>
           <a class="gen--link" href="https://www.npmjs.com/~mdawsondev" target="_blank">
             <i class="portfolio__icon fab fa-npm fa-6x"></i>
@@ -182,6 +200,9 @@
         </div>
       </div>
 
+      <p class="text-center text-neutral-lighter">
+        <b>Click to Interact</b>
+      </p>
       <div class="portfolio__grid">
         <div class="portfolio__grid-container">
           <div class="detail__helper">
@@ -206,7 +227,7 @@
             <div class="portfolio__overlay"></div>
             <div class="portfolio__detail">
               <h3 class="text-center">incogni.me</h3>
-              <p class="">Single-page username generator built with JavaScript, HTML, and Sass.
+              <p class="hide-sm">Single-page username generator built with JavaScript, HTML, and Sass.
               </p>
               <div class="gen--flex portfolio__detail-icons">
                 <a class="gen--link text-center" href="https://mdawsondev.github.io/incogni.me/dist/index.html" target="_blank">
@@ -339,11 +360,13 @@
           <b>What else are you working on?</b>
         </p>
         <p class="portfolio__footer-subtitle text-neutral text-center">Check it out!</p>
-        <ul class="portfolio__footer-list text-white">
+        <ul class="portfolio__footer-list text-neutral-lighter">
           <li>
+            <i class="fas fa-rocket"></i>
             <a class="gen--link text-primary-lighter" href="#">Lessons</a>: Upcoming YouTube series and accompanying website to help teach beginners.
           </li>
           <li>
+            <i class="fas fa-rocket"></i>
             <a class="gen--link text-primary-lighter" href="https://github.com/mdawsondev/munchkin">Munchkin</a>: Designed to be an small, ultra user-friendly HTML/CSS framework.
           </li>
           <li>
@@ -368,7 +391,8 @@
           <p>Constant practice and interest in acquiring new skills motivates me to work hard and learn as much as I can!</p>
         </div>
 
-        <hr class="section_v-rule gen--middle">
+        <hr class="section__v-rule gen--middle hide-sm">
+        <hr class="section__rule--md">
 
         <div class="skills__certifications">
           <h2 class="text-neutral text-center">
@@ -384,31 +408,31 @@
             <tbody>
               <tr>
                 <td>
-                  <a class="gen--link text-primary-darker" href="https://ude.my/UC-PWXY7W94">The Web Developer Bootcamp</a>
+                  <a class="gen--link text-primary-darker" href="https://ude.my/UC-PWXY7W94" target="_blank">The Web Developer Bootcamp</a>
                 </td>
                 <td class="text-right">43</td>
               </tr>
               <tr>
                 <td>
-                  <a class="gen--link text-primary-darker" href="http://ude.my/UC-7VCRMSH3">ES6 Javascript</a>
+                  <a class="gen--link text-primary-darker" href="http://ude.my/UC-7VCRMSH3" target="_blank">ES6 Javascript</a>
                 </td>
                 <td class="text-right">6.5</td>
               </tr>
               <tr>
                 <td>
-                  <a class="gen--link text-primary-darker" href="http://ude.my/UC-LY9DH0YE">Mastering the Modern Workflow</a>
+                  <a class="gen--link text-primary-darker" href="http://ude.my/UC-LY9DH0YE" target="_blank">Mastering the Modern Workflow</a>
                 </td>
                 <td class="text-right">15</td>
               </tr>
               <tr>
                 <td>
-                  <a class="gen--link text-primary-darker" href="http://ude.my/UC-TVZ3INHQ">Pre-Programming</a>
+                  <a class="gen--link text-primary-darker" href="http://ude.my/UC-TVZ3INHQ" target="_blank">Pre-Programming</a>
                 </td>
                 <td class="text-right">6.5</td>
               </tr>
               <tr>
                 <td>
-                  <a class="gen--link text-primary-darker" href="https://www.freecodecamp.org/mdawsondev/front-end-certification">FCC Front-End Development</a>
+                  <a class="gen--link text-primary-darker" href="https://www.freecodecamp.org/mdawsondev/front-end-certification" target="_blank">FCC Front-End Development</a>
                 </td>
                 <td class="text-right">477</td>
               </tr>
@@ -510,9 +534,10 @@
             I wanted.</p>
         </div>
 
-        <hr class="section_v-rule gen--middle">
+        <hr class="section__v-rule gen--middle hide-sm">
+        <hr class="section__rule--md">
 
-        <div class="about__site">
+        <div class="about__site" id="about__site">
           <h2 class="text-neutral-lighter text-center">
             <i class="fas fa-code text-primary-lighter"></i> About This Site</h2>
 
@@ -520,12 +545,12 @@
             <b>Languages</b>: HTML, Sass, ES6</p>
           <p>
             <b>Libraries</b>:
-            <a class="gen--link text-primary-lighter" href="https://daneden.github.io/animate.css/">Animate.css</a>,
-            <a class="gen--link text-primary-lighter" href="http://fontawesome.io/">Font Awesome</a>,
-            <a class="gen--link text-primary-lighter" href="https://github.com/verlok/lazyload">lazyload</a>,
-            <a class="gen--link text-primary-lighter" href="https://necolas.github.io/normalize.css/">Normalize.css</a>,
-            <a class="gen--link text-primary-lighter" href="http://vincentgarreau.com/particles.js/">particles.js</a>,
-            <a class="gen--link text-primary-lighter" href="https://github.com/cferdinandi/smooth-scroll">Smooth Scroll</a>
+            <a class="gen--link text-primary-lighter" href="https://daneden.github.io/animate.css/" target="_blank">Animate.css</a>,
+            <a class="gen--link text-primary-lighter" href="http://fontawesome.io/" target="_blank">Font Awesome</a>,
+            <a class="gen--link text-primary-lighter" href="https://github.com/verlok/lazyload" target="_blank">lazyload</a>,
+            <a class="gen--link text-primary-lighter" href="https://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a>,
+            <a class="gen--link text-primary-lighter" href="http://vincentgarreau.com/particles.js/" target="_blank">particles.js</a>,
+            <a class="gen--link text-primary-lighter" href="https://github.com/cferdinandi/smooth-scroll" target="_blank">Smooth Scroll</a>
           </p>
           <p>
             <b>Tech</b>: VSCode, git, GitHub, webpack, yarn</p>
@@ -536,7 +561,7 @@
           <p>Sections are compiled using different CSS techniques, coupled with modular design and BEM naming. The site is designed
             fully responsive, and mobile friendly.</p>
           <p class="text-center">
-            <a class="gen--link text-primary-lighter" href="https://github.com/mdawsondev/mdawsondev">
+            <a class="gen--link text-primary-lighter" href="https://github.com/mdawsondev/mdawsondev" target="_blank">
               <b>View the source code on GitHub!</b>
             </a>
           </p>
@@ -570,7 +595,7 @@
               <i class="fa fa-map-marker-alt" aria-hidden="true"></i> Boone, North Carolina</p>
             <p>
               <i class="fa fa-envelope" aria-hidden="true"></i>
-              <a class="gen--link text-primary-lighter" href="mailto:mdawsondev@gmail.com">Send me an Email Directly</a>
+              <a class="gen--link text-primary-lighter" href="mailto:mdawsondev@gmail.com">Email Me Directly</a>
             </p>
             <p>
               <i class="fa fa-comment" aria-hidden="true"></i>
@@ -595,13 +620,13 @@
               <a class="gen--link text-neutral-lighter" href="#welcome">Home</a>
             </li>
             <li>
-              <a class="gen--link text-neutral-lighter" href="#about">About</a>
-            </li>
-            <li>
               <a class="gen--link text-neutral-lighter" href="#portfolio">Portfolio</a>
             </li>
             <li>
               <a class="gen--link text-neutral-lighter" href="#skills">Skills</a>
+            </li>
+            <li>
+              <a class="gen--link text-neutral-lighter" href="#about">About</a>
             </li>
             <li>
               <a class="gen--link text-neutral-lighter" href="#contact">Contact</a>

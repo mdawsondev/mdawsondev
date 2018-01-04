@@ -3,6 +3,7 @@
     margin: -10rem auto 0;
   }
   @include sm {
+    justify-content: space-around;
     flex-wrap: wrap;
     margin: 0;
   }
@@ -17,14 +18,15 @@
 .skills__inner {
   @include sm {
     margin: .2rem;
+    text-align: center;
   }
   margin: 0 .5rem;
 }
 
 .skills__list {
   & > li {
-    margin: 0.5rem 0;
     font-size: .8rem;
+    margin: 0.5rem 0;
   }
 }
 

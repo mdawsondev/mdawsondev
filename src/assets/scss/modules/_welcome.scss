@@ -1,7 +1,8 @@
 .welcome__card {
   @include md {
     margin: 1rem 0 0;
-    width: fit-content;
+    padding: 1rem;
+    width: auto;
   }
   border-bottom: 2px solid lighten($primary, 35%);
   border-radius: 1.25rem;
@@ -21,7 +22,6 @@
 
 .welcome__list {
   text-align: initial;
-
   & > li {
     margin: .5rem;
   }

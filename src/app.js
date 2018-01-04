@@ -119,7 +119,7 @@ var why = function why() {
   var whyBtns = document.querySelectorAll(".portfolio__help");
   whyBtns.forEach(function (whyBtn) {
     whyBtn.addEventListener("click", function (el) {
-      el.currentTarget.nextSibling.classList.toggle("abc--visible");
+      el.currentTarget.nextSibling.classList.toggle("why__hover--visible");
     });
   });
 };
