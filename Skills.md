@@ -8,7 +8,7 @@
 4. **Above Average** - I know this language well enough to teach others and use advanced theory.
 5. **Senior Level** - I know this language inside and out.
 
-## Languages
+## Languages & Packages
 
 * Angular: 1
 * C#: 1
@@ -26,6 +26,7 @@
 * ReactJS: 3
 * Sass: 3
 * TypeScript: 3
+* Vue: 1
 * Webpack: 3
 
 ## Tools
@@ -58,6 +59,11 @@
 * MVC: 3
 * Paradigms: 3
 * SQL: 2
+* Static Generators
+  * Gatsby: 1
+  * Hexo: 1
+  * Hugo: 1
+  * Jekyl: 2
 * Time Complexity: 3
 * UI Frameworks
   * Bootstrap: 3
