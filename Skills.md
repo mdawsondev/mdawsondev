@@ -2,7 +2,7 @@
 
 **Grading Scale**
 
-1. **Totally Inexperienced** - I've heard of this, maybe know a tiny bit.
+1. **Inexperienced** - I know a little, but it's one of my weaker skills.
 2. **Below Average** - I know the fundamentals, maybe a bit more - but not comfortably.
 3. **Average** - I can work with and talk about this language comfortably.
 4. **Above Average** - I know this language well enough to teach others and use advanced theory.
@@ -52,7 +52,7 @@
 * Local Storage: 3
 * MVC: 3
 * Paradigms: 3
-* SQL: 1
+* SQL: 2
 * Time Complexity: 3
 * UI Frameworks: 3
 * Regex: 3
