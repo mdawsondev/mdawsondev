@@ -48,11 +48,19 @@
 ## Others
 
 * API: 3
+* CMS
+  * Craft: 1
+  * Drupal: 1
+  * Joomla!: 1
+  * Wordpress: 3
 * Databases (General): 2
 * Local Storage: 3
 * MVC: 3
 * Paradigms: 3
 * SQL: 2
 * Time Complexity: 3
-* UI Frameworks: 3
+* UI Frameworks
+  * Bootstrap: 3
+  * Bulma: 1
+  * Semantic: 3
 * Regex: 3
