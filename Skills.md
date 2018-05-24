@@ -4,9 +4,9 @@
 
 1. **Inexperienced** - I know a little, but it's one of my weaker skills.
 2. **Below Average** - I know the fundamentals, maybe a bit more - but not comfortably.
-3. **Average** - I can work with and talk about this language comfortably.
-4. **Above Average** - I know this language well enough to teach others and use advanced theory.
-5. **Senior Level** - I know this language inside and out.
+3. **Average** - I can work with and talk about this technology comfortably.
+4. **Above Average** - I know this technology well enough to teach others and use advanced theory.
+5. **Senior Level** - I know this technology inside and out.
 
 ## Languages & Packages
 
