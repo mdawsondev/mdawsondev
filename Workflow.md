@@ -1,6 +1,6 @@
 ## Stack and Workflow
 
-A complete rundown of the tools I use, why I use them, how I use them, and my process for building a project from start to end.
+A complete rundown of the tools I use, why I use them, how I use them, and my process for building a project from start to end. This isn't a full list of my skillset, just preferenced technologies.
 
 ## Tech
 
@@ -11,7 +11,7 @@ A complete rundown of the tools I use, why I use them, how I use them, and my pr
 * **Jest** - I use Jest for unit testing because it works harmoniously with React.
 * **Sass** - Though not always necessary, I like the Sass modular design and the power of nesting CSS and the ability to use conditionals, variables, and loops if they're needed.
 * **GitHub** - Issue tracking, public deployment, collaberation.
-* **Node.js** - I mostly use Node for local support of JavaScript (servers, CLI, etc.), but Node is an extremely powerful development enviornment that I have use for local native applications.
+* **Node.js** - I mostly use Node for local support of JavaScript (servers, CLI, etc.), but Node is an extremely powerful development enviornment that I have used for local native applications.
 * **git** - Version Control.
 * **Webpack** - Bundling; alternatively Gulp, but Webpack is becoming by-far the leader here.
 * **Firebase** - Easy database management for small to mid-sized projects.
