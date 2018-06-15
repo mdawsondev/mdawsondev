@@ -26,7 +26,7 @@ I mainly made this to share with other developers and get feedback to help tight
 
 ## Credentials
 
-Self-taught, and highly motivated to expose myself to as much education and experience that I can possibly get my hands on. I've completed the following (as well as seveal unlisted) courses/certifications, and fully intend to keep the list growing.
+Self-taught, and highly motivated to expose myself to as much education and experience that I can possibly get my hands on. I've completed the following (as well as several unlisted) courses/certifications, and fully intend to keep the list growing.
 
 * [The Web Developer Bootcamp](https://ude.my/UC-PWXY7W94/) - 43 Hours
 * [ES6 Javascript](http://ude.my/UC-7VCRMSH3) - 6.5 Hours
